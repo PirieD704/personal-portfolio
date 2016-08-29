@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html ng-app="portfolio" lang="en">
+<head>
+
+
+	<meta charset="UTF-8">
+	<title>David Pirie's Portfolio</title>
+
+<!-- include bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
+
+	<link rel="stylesheet" type="text/css" href="public/stylesheets/styles.css">
+
+	<link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
+
+	<!-- Includ jquery because bootstrap needs it -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+	<!-- Include bootstrap.js  -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!-- Include angular. duh -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+
+	<!-- our angular animate module -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
+
+	<!-- Include the routes module so we can use ng-view -->
+	<script src="https://code.angularjs.org/1.5.8/angular-route.min.js"></script>
+
+	<!-- Included cookies module -->
+	<script src="https://code.angularjs.org/1.5.8/angular-cookies.min.js"></script>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.min.js"></script>
+  	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-aria.min.js"></script>
+  	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-messages.min.js"></script>
+
+	<!-- our js sheet -->
+	<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+</head>
+<body ng-controller="portfolioController">
+
+	<div class="container-fluid">
+		<div class="row main-screen">
+			<video poster="img/funkyBackground.jpg" id="bgvid" loop playsinline autoplay muted>
+				<source src="img/timelapse.mp4" type="video/mp4">
+			</video>
+			<div class="title-name">
+				David Pirie
+			</div>
+			<div class="title-occupation">
+				Web Developer
+			</div>			
+		</div>
+		<div class="navbar">
+			<div class="nav-text">
+				<ul>
+					<li class="fade-text"><a>HOME</a></li>
+					<li class="fade-text"><a>ABOUT</a></li>
+					<li class="fade-text"><a>PORTFOLIO</a></li>
+					<li class="fade-text"><a>RESUME</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	
+</body>
+</html>

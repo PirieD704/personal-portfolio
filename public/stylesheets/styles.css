@@ -1,0 +1,59 @@
+/* line 6, ../../compass/sass/views/_home.scss */
+* {
+  color: black;
+}
+
+/* line 23, ../../compass/sass/styles.scss */
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background: url("//demosthenes.info/assets/images/polina.jpg") no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+
+/* line 38, ../../compass/sass/styles.scss */
+.title-name {
+  margin-top: 400px;
+  font-size: 80px;
+  color: #eee;
+  text-align: center;
+}
+
+/* line 45, ../../compass/sass/styles.scss */
+.title-occupation {
+  font-size: 50px;
+  color: #eee;
+  text-align: center;
+}
+
+/* line 51, ../../compass/sass/styles.scss */
+.navbar {
+  margin-top: 300px;
+  position: relative;
+  background-color: #3c3c3c;
+  height: 60px;
+  width: 100%;
+  z-index: 1000;
+  line-height: 60px;
+  opacity: .90;
+  text-align: center;
+}
+/* line 61, ../../compass/sass/styles.scss */
+.navbar li {
+  display: inline-block;
+  padding: 0px 60px;
+}
+
+/* line 67, ../../compass/sass/styles.scss */
+ul {
+  display: block;
+  -webkit-padding-start: 0px;
+}

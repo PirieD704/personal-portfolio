@@ -11,6 +11,8 @@ var W = window.innerWidth;
 var H = window.innerHeight;
 canvas.width = W;
 canvas.height = H;
+console.log(W);
+console.log(H);
 
 var mp = 25 // max particles
 var particles = [];
@@ -35,11 +37,36 @@ function draw(){
 	}
 	context.fill();
 	update();
+	writeText();
+}
+
+function writeText(){
+
+	var tx1 = canvas.width * .42;
+	var th1 = canvas.height * .4;
+	var tx2 = canvas.width * .45;
+	var th2 = canvas.height * .5;
+	// console.log(tx1)
+	// console.log(th1)
+	// console.log(tx2)
+	// console.log(th2)
+	if(W < 1500 && W > 1200){
+		tx1 = tx1 * .92;
+		tx2 = tx2 * .945;
+	}else if( W < 900 && W > 600){
+		tx1 = tx1 * .6;
+		tx2 = tx2 * .68;
+	}else if(W < 600){
+		tx1 = tx1 * .4;
+		tx2 = tx2 * .5;
+	}
+
 	context.font = '64px Helvetica';
 	context.fillStyle = '#eee';
-	context.fillText("Hi I'm David", 540, 300);
+	context.fillText("Hi I'm David", tx1, th1);
 	context.font = '40px Helvetica';
-	context.fillText("I build things", 590, 500);
+	context.fillText("I build things", tx2, th2);
+
 }
 
 var angle = 0;

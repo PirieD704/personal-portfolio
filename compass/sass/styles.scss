@@ -107,22 +107,27 @@ ul {
 	}
 }
 
+.controls {
+	background-color: #eee;
+}
+
 #container{
 	width: 100%;
 	background-color: #eee;
 	text-align: center;
-	opacity: .95;
+	height: 700px;
+	display: block;
 }
 
 #container div {
-	height: 250px;
+	height: 200px;
 	width: 15%;
 	padding: 20px;
 }
 
 #container img{
 	width: 80%;
-	height: 80%;
+	max-height: 80%;
 }
 
 .container .mix, .container .gap{
@@ -134,8 +139,20 @@ ul {
 	display: none;
 }
 
+#mix-wrapper {
+	height: 700px;
+}
+.projects-wrapper{
+	height: 800px;
+	text-align: center;
+	display: block;
+	background-color: #eee;
+}
 
-
+.projects-title{
+	font-size: 30px;
+	text-align: center;
+}
 
 
 

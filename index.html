@@ -11,6 +11,8 @@
 
 	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+
 	<link rel="stylesheet" type="text/css" href="public/stylesheets/styles.css">
 
 	<link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
@@ -18,7 +20,7 @@
 </head>
 <body ng-controller="portfolioController">
 
-	<div class="container-fluid">
+<!-- 	<div class="container-fluid"> -->
 		<div class="row main-screen">
 			<video poster="img/funkyBackground.jpg" id="bgvid" loop playsinline autoplay muted>
 				<source src="img/timelapse.mp4" type="video/mp4">
@@ -43,7 +45,7 @@
 
 		<div class="about-section-wrapper">
 			<div class="about-section">
-				A little about me
+				<div class="">A little about me</div>
 				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -61,26 +63,29 @@
   		</div>
   		<div id="mix-wrapper">
 	  		<div id="container" class="container">
-	  			<div class="mix category-1" data-myorder="1"><img src="dev-logos/AngularJS.png"></div>
-	  			<div class="mix category-2" data-myorder="2"><img src="dev-logos/apache.png"></div>
-	  			<div class="mix category-1" data-myorder="3"><img src="dev-logos/bootstrap.png"></div>
-	  			<div class="mix category-1" data-myorder="4"><img src="dev-logos/CSS3.png"></div>
-	  			<div class="mix category-2" data-myorder="5"><img src="dev-logos/express_js.png"></div>
-	  			<div class="mix category-2" data-myorder="6"><img src="dev-logos/github.png"></div>
-	  			<div class="mix category-1" data-myorder="7"><img src="dev-logos/HTML5.png"></div>
-	  			<div class="mix category-1" data-myorder="8"><img src="dev-logos/javascript.png"></div>
-	  			<div class="mix category-1" data-myorder="9"><img src="dev-logos/jQuery.png"></div>
-	  			<div class="mix category-2" data-myorder="10"><img src="dev-logos/Linux.png"></div>
-	  			<div class="mix category-2" data-myorder="11"><img src="dev-logos/mongodB.png"></div>
-	  			<div class="mix category-2" data-myorder="12"><img src="dev-logos/mysql.png"></div>
-	  			<div class="mix category-2" data-myorder="13"><img src="dev-logos/node.png"></div>
-	  			<div class="mix category-2" data-myorder="14"><img src="dev-logos/python-logo-glassy2.png"></div>
-	  			<div class="mix category-1" data-myorder="15"><img src="dev-logos/sass.png"></div>
-	  			<div class="mix category-1" data-myorder="16"><img src="dev-logos/sketch.png"></div>
-	  			<div class="mix category-2" data-myorder="17"><img src="dev-logos/ionic.png"></div>
+	  			<div class="mix category-1 wow slideInLeft" data-wow-offset="20" data-myorder="1"><img src="dev-logos/AngularJS.png"></div>
+	  			<div class="mix category-2 wow bounceInUp" data-wow-offset="20" data-myorder="2"><img src="dev-logos/apache.png"></div>
+	  			<div class="mix category-1 wow bounceInDown" data-wow-offset="20" data-myorder="3"><img src="dev-logos/bootstrap.png"></div>
+	  			<div class="mix category-1 wow bounceInUp" data-wow-offset="20" data-myorder="4"><img src="dev-logos/CSS3.png"></div>
+	  			<div class="mix category-2 wow bounceInDown" data-wow-offset="20" data-myorder="5"><img src="dev-logos/express_js.png"></div>
+	  			<div class="mix category-2 wow slideInRight" data-wow-offset="20" data-myorder="6"><img src="dev-logos/github.png"></div>
+	  			<div class="mix category-1 wow slideInLeft" data-wow-offset="20" data-myorder="7"><img src="dev-logos/HTML5.png"></div>
+	  			<div class="mix category-1 wow bounceInDown" data-wow-offset="20" data-myorder="8"><img src="dev-logos/javascript.png"></div>
+	  			<div class="mix category-1 wow bounceInUp" data-wow-offset="20" data-myorder="9"><img src="dev-logos/jQuery.png"></div>
+	  			<div class="mix category-2 wow bounceInDown" data-wow-offset="20" data-myorder="10"><img src="dev-logos/Linux.png"></div>
+	  			<div class="mix category-2 wow bounceInUp" data-wow-offset="20" data-myorder="11"><img src="dev-logos/mongodB.png"></div>
+	  			<div class="mix category-2 wow slideInRight" data-wow-offset="20" data-myorder="12"><img src="dev-logos/mysql.png"></div>
+	  			<div class="mix category-2 wow slideInLeft" data-wow-offset="20" data-myorder="13"><img src="dev-logos/node.png"></div>
+	  			<div class="mix category-2 wow bounceInUp" data-wow-offset="20" data-myorder="14"><img src="dev-logos/python-logo-glassy2.png"></div>
+	  			<div class="mix category-1 wow bounceInDown" data-wow-offset="20" data-myorder="15"><img src="dev-logos/sass.png"></div>
+	  			<div class="mix category-1 wow bounceInUp" data-wow-offset="20" data-myorder="16"><img src="dev-logos/sketch.png"></div>
+	  			<div class="mix category-2 wow slideInRight" data-wow-offset="20" data-myorder="17"><img src="dev-logos/ionic.png"></div>
 	  		</div>
   		</div>
-	</div>
+  		<div class="projects-wrapper">
+			<span class="projects-title">My Work</span>
+		</div>
+<!-- 	</div> -->
 
 	<!-- Includ jquery because bootstrap needs it -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -105,9 +110,12 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-messages.min.js"></script>
  -->
 	<!-- our js sheet -->
-<!-- 	<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
- -->	<!-- mix it up! -->
-	<script src="https://cdn.jsdelivr.net/jquery.mixitup/2.1.11/jquery.mixitup.min.js"></script>
+<!-- 	<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script> -->
+ 	<script src="js/wow.js"></script>
+    <script>
+    	new WOW().init();
+    </script>
+	<script src="js/mixItUp.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 	
 </body>

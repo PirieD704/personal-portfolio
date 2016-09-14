@@ -14,7 +14,7 @@ canvas.height = H;
 console.log(W);
 console.log(H);
 
-var mp = 25 // max particles
+var mp = 1000 // max particles
 var particles = [];
 for(var i = 0;i < mp; i++){
 	particles.push({

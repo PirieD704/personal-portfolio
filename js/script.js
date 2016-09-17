@@ -14,13 +14,13 @@ canvas.height = H;
 console.log(W);
 console.log(H);
 
-var mp = 1000 // max particles
+var mp = 4000 // max particles
 var particles = [];
 for(var i = 0;i < mp; i++){
 	particles.push({
 		x:Math.random()*W, //x-coordinate
 		y:Math.random()*H, //y-coordinate
-		r:Math.random()*4+1, //radius
+		r:Math.random()*2, //radius
 		d:Math.random()*mp //density
 	})
 }
@@ -46,6 +46,10 @@ function writeText(){
 	var th1 = canvas.height * .4;
 	var tx2 = canvas.width * .45;
 	var th2 = canvas.height * .5;
+	// var tx1 = canvas.width * .1;
+	// var th1 = canvas.height * .2;
+	// var tx2 = canvas.width * .14;
+	// var th2 = canvas.height * .25;
 	// console.log(tx1)
 	// console.log(th1)
 	// console.log(tx2)
@@ -65,7 +69,7 @@ function writeText(){
 	context.fillStyle = '#eee';
 	context.fillText("Hi I'm David", tx1, th1);
 	context.font = '40px Helvetica';
-	context.fillText("I build things", tx2, th2);
+	// context.fillText("I build things", tx2, th2);
 
 }
 
@@ -77,7 +81,7 @@ function update(){
 		p.y += Math.cos(angle+p.d) + 1 + p.r/2;
 		p.x += Math.sin(angle) * 2;
 		if(p.x > W+5 || p.x < -5 || p.y > H){
-			if(j%3 > 0){
+			if(j%6 > 0){
 				particles[j] = {x: Math.random()*W, y: -10, r: p.r, d: p.d};
 			}else if(Math.sin(angle) > 0){
 				particles[j] = {x: -5, i: Math.random()*H, r: p.r, d: p.d};

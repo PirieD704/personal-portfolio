@@ -12,10 +12,10 @@
 /* line 27, ../../compass/sass/styles.scss */
 canvas {
   display: block;
-  background: #6b92b9;
+  background-color: #6b92b9;
 }
 
-/* line 47, ../../compass/sass/styles.scss */
+/* line 51, ../../compass/sass/styles.scss */
 .title-name {
   margin-top: 320px;
   font-size: 80px;
@@ -23,24 +23,24 @@ canvas {
   text-align: center;
 }
 
-/* line 54, ../../compass/sass/styles.scss */
+/* line 58, ../../compass/sass/styles.scss */
 .title-occupation {
   font-size: 50px;
   color: #eee;
   text-align: center;
 }
 
-/* line 60, ../../compass/sass/styles.scss */
+/* line 64, ../../compass/sass/styles.scss */
 .top-bar {
   height: 19px;
   width: 100%;
   background-color: #4B2F1B;
 }
 
-/* line 66, ../../compass/sass/styles.scss */
+/* line 70, ../../compass/sass/styles.scss */
 .navbar {
   position: relative;
-  background-color: #7A4C2A;
+  background-color: #271830;
   border-radius: 0px;
   height: 60px;
   width: 100%;
@@ -50,23 +50,23 @@ canvas {
   text-align: center;
   margin-bottom: 0px;
 }
-/* line 77, ../../compass/sass/styles.scss */
+/* line 81, ../../compass/sass/styles.scss */
 .navbar li {
   display: inline-block;
   padding: 0px 60px;
 }
-/* line 80, ../../compass/sass/styles.scss */
+/* line 84, ../../compass/sass/styles.scss */
 .navbar li a {
   color: #eee;
 }
 
-/* line 86, ../../compass/sass/styles.scss */
+/* line 90, ../../compass/sass/styles.scss */
 ul {
   display: block;
   -webkit-padding-start: 0px;
 }
 
-/* line 91, ../../compass/sass/styles.scss */
+/* line 95, ../../compass/sass/styles.scss */
 .about-section-wrapper {
   background: #6b92b9;
   background: -moz-linear-gradient(top, #6b92b9 0%, #f6f6f6 53%, white 100%);
@@ -79,7 +79,7 @@ ul {
   width: 100%;
 }
 
-/* line 104, ../../compass/sass/styles.scss */
+/* line 108, ../../compass/sass/styles.scss */
 .about-section {
   font-size: 26px;
   width: 70%;
@@ -88,38 +88,38 @@ ul {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-/* line 113, ../../compass/sass/styles.scss */
+/* line 117, ../../compass/sass/styles.scss */
 .about-section span {
   color: #3c3c3c;
 }
 
-/* line 118, ../../compass/sass/styles.scss */
+/* line 122, ../../compass/sass/styles.scss */
 .controls {
   text-align: center;
   color: #eee;
 }
-/* line 121, ../../compass/sass/styles.scss */
+/* line 125, ../../compass/sass/styles.scss */
 .controls button {
   background-color: #3c3c3c;
   border: none;
   border-radius: 4%;
   padding: 10px;
 }
-/* line 127, ../../compass/sass/styles.scss */
+/* line 131, ../../compass/sass/styles.scss */
 .controls button.active {
   background-color: #68b8c4;
 }
-/* line 130, ../../compass/sass/styles.scss */
+/* line 134, ../../compass/sass/styles.scss */
 .controls label {
   color: white;
 }
 
-/* line 135, ../../compass/sass/styles.scss */
+/* line 139, ../../compass/sass/styles.scss */
 .controls {
   background-color: #ffffff;
 }
 
-/* line 139, ../../compass/sass/styles.scss */
+/* line 143, ../../compass/sass/styles.scss */
 #container {
   width: 100%;
   background-color: #ffffff;
@@ -128,36 +128,36 @@ ul {
   display: block;
 }
 
-/* line 147, ../../compass/sass/styles.scss */
+/* line 151, ../../compass/sass/styles.scss */
 #container div {
   height: 200px;
   width: 15%;
   padding: 20px;
 }
 
-/* line 153, ../../compass/sass/styles.scss */
+/* line 157, ../../compass/sass/styles.scss */
 #container img {
   width: 80%;
   max-height: 80%;
 }
 
-/* line 158, ../../compass/sass/styles.scss */
+/* line 162, ../../compass/sass/styles.scss */
 .container .mix, .container .gap {
   display: inline-block;
   width: 23%;
 }
 
-/* line 163, ../../compass/sass/styles.scss */
+/* line 167, ../../compass/sass/styles.scss */
 #container .mix {
   display: none;
 }
 
-/* line 167, ../../compass/sass/styles.scss */
+/* line 171, ../../compass/sass/styles.scss */
 #mix-wrapper {
   height: 700px;
 }
 
-/* line 170, ../../compass/sass/styles.scss */
+/* line 174, ../../compass/sass/styles.scss */
 .projects-wrapper {
   height: 800px;
   text-align: center;
@@ -165,7 +165,7 @@ ul {
   background-color: #ffffff;
 }
 
-/* line 177, ../../compass/sass/styles.scss */
+/* line 181, ../../compass/sass/styles.scss */
 .projects-title {
   font-size: 30px;
   text-align: center;

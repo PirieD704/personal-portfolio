@@ -4,6 +4,8 @@
 
 
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>David Pirie's Portfolio</title>
 
 <!-- include bootstrap -->
@@ -13,11 +15,9 @@
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
 
-	<link href="https://fonts.googleapis.com/css?family=Maven+Pro|Quicksand" rel="stylesheet">
-
 	<link rel="stylesheet" type="text/css" href="public/stylesheets/styles.css">
 
-	<link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Calligraffitti|Julius+Sans+One|Montserrat|Oleo+Script|Rock+Salt" rel="stylesheet">
 
 </head>
 <body ng-controller="portfolioController">
@@ -35,6 +35,7 @@
 			</div> -->
 			<canvas id="the-canvas" height="1100px" width="1440px">
 			</canvas>
+			<div class="main-text">Hi I'm David</div>
 		</div>
 <!-- 		<div class="top-bar" height="25px">
 		</div> -->
@@ -51,7 +52,7 @@
 
 		<div class="about-section-wrapper">
 			<div class="about-section">
-				<div class="">A little about me</div>
+				<div class="" style="font-family: 'Montserrat'">A little about me</div>
 				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -68,7 +69,7 @@
   			<button class="filter" data-filter=".category-2">BACK END</button>
   		</div>
   		<div id="mix-wrapper">
-	  		<div id="container" class="container">
+	  		<div id="container" class="container-mix container">
 	  			<div class="mix category-1 wow slideInLeft" data-wow-offset="50" data-myorder="1"><img src="dev-logos/AngularJS.png"></div>
 	  			<div class="mix category-2 wow bounceInUp" data-wow-offset="50" data-myorder="2"><img src="dev-logos/apache.png"></div>
 	  			<div class="mix category-1 wow bounceInDown" data-wow-offset="50" data-myorder="3"><img src="dev-logos/bootstrap.png"></div>
@@ -88,8 +89,47 @@
 	  			<div class="mix category-2 wow slideInRight" data-wow-offset="50" data-myorder="17"><img src="dev-logos/ionic.png"></div>
 	  		</div>
   		</div>
-  		<div class="projects-wrapper">
-			<span class="projects-title">My Work</span>
+		<div class="container projects-wrapper">
+			<h1 id="portfolio" class="section-header">My Work</h1>
+			<section id="projects" ng-controller="portfolioController">
+				<div>
+					<div id="mosaic">
+						<div id="bg-project-bp" class="screen-size" >
+							<img class="bg-project-bp" src="img/andromeda.jpg">
+						</div>
+						<div id="bg-project1" class="screen-size" >
+							<img class="bg-project-img" ng-class="zoomClass1" ng-style="fadeImg1" ng-attr-src="{{cover1}}">
+						</div>
+						<div id="bg-project2" class="screen-size">
+							<img class="bg-project-img" ng-class="zoomClass2" ng-style="fadeImg2" ng-attr-src="{{cover2}}">
+						</div>
+						<div id="projects-cover">
+							<div id="list-boxes">
+								<div class="case" ng-repeat="project in portfolio" ng-mouseenter="hoverIn(project.cover)">
+									<a href="{{project.url}}" target="_blank">
+										<div class="case-img-cover" data-cover="{{project.cover}}">
+											<img ng-src="{{project.smallCover}}" data-path="{{project.smallCover}}">
+										</div>
+										<div class="title-cover">
+											<img class="lang-logo" ng-src="{{project.langImg}}">
+											<h3 class="proj-title">{{project.projectName}}</h3>
+											<p class="proj-body">{{project.desc}}</p> 
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="clear"></div>
+							<div class="top sep-vt sep-vt1"></div>
+							<div class="bottom sep-vt sep-vt2"></div>
+							<div class="sep-hz"></div>
+							<div class="sep-hz"></div>
+							<div class="sep-hz"></div>
+							<div class="sep-hz"></div>
+							<div class="sep-hz"></div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</div>
 		<div class="form-wrapper">
 			<a href="javascript:window.location.href = 'mailto:' + 'pirie' + 'david' + ['a','gma'].join('@') + ['il','com'].join('.')"><i class="fa fa-envelope"></i>  pirie<!---->david<!---->a<!---->@<!---->gmail<!---->.<!---->com</a>
@@ -109,36 +149,38 @@
 		</div>
 <!-- 	</div> -->
 
-	<!-- Includ jquery because bootstrap needs it -->
+	<!-- Include jquery because bootstrap needs it -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
 	<!-- Include bootstrap.js  -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 	<!-- Include angular. duh -->
-<!-- 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
- -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+
 	<!-- our angular animate module -->
-<!-- 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
- -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
+
 	<!-- Include the routes module so we can use ng-view -->
-<!-- 	<script src="https://code.angularjs.org/1.5.8/angular-route.min.js"></script>
- -->
+	<script src="https://code.angularjs.org/1.5.8/angular-route.min.js"></script>
+
 	<!-- Included cookies module -->
-<!-- 	<script src="https://code.angularjs.org/1.5.8/angular-cookies.min.js"></script>
- -->
-<!-- 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.min.js"></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-aria.min.js"></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-messages.min.js"></script>
- -->
+	<script src="https://code.angularjs.org/1.5.8/angular-cookies.min.js"></script>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-aria.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-messages.min.js"></script>
+
 	<!-- our js sheet -->
-<!-- 	<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script> -->
+	<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
  	<script src="js/wow.js"></script>
-    <script>
-    	new WOW().init();
-    </script>
+	<script>
+		new WOW().init();
+	</script>
 	<script src="js/mixItUp.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
-	
+	<script type="text/javascript" src="js/controller.js"></script>
+
+
 </body>
 </html>

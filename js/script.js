@@ -1,3 +1,4 @@
+// allows the dec icons the swith up
 $(function(){
   $('#container').mixItUp();
 });
@@ -14,7 +15,7 @@ canvas.height = H;
 console.log(W);
 console.log(H);
 
-var mp = 4000 // max particles
+var mp = 3000 // max particles
 var particles = [];
 for(var i = 0;i < mp; i++){
 	particles.push({
@@ -65,10 +66,10 @@ function writeText(){
 		tx2 = tx2 * .5;
 	}
 
-	context.font = '64px Helvetica';
+	context.font = '64px "Montserrat"';
 	context.fillStyle = '#eee';
-	context.fillText("Hi I'm David", tx1, th1);
-	context.font = '40px Helvetica';
+	// context.fillText("Hi I'm David", tx1, th1);
+	context.font = '40px "Montserrat"';
 	// context.fillText("I build things", tx2, th2);
 
 }
@@ -79,7 +80,8 @@ function update(){
 	for(var j = 0; j < mp; j++){
 		var p = particles[j];
 		p.y += Math.cos(angle+p.d) + 1 + p.r/2;
-		p.x += Math.sin(angle) * 2;
+		// this controls the lateral movement of the snow
+		// p.x += Math.sin(angle) * 2;
 		if(p.x > W+5 || p.x < -5 || p.y > H){
 			if(j%6 > 0){
 				particles[j] = {x: Math.random()*W, y: -10, r: p.r, d: p.d};
@@ -93,3 +95,55 @@ function update(){
 }
 setInterval(draw, 33);
 }
+
+// Handles the portfolio section
+$(document).ready(function() {
+    
+    $('.case').each(function(){
+        $(this).height($('#projects').height() / 3);
+        $(this).mouseover(function(event) {
+            /* Act on the event */
+            // Hide everything on the sibling files except the title and make it somewhat opaque
+            $(this).siblings().find(".lang-logo, .proj-title, .proj-body").css('margin-top', '20px');
+            $(this).siblings().find(".proj-title").css('opacity', '0.7');
+            $(this).siblings().find(".case-img-cover, .lang-logo, .proj-body").css('opacity', '0');
+            $('#bg-project-bp').css('opacity', '0');
+            // Hide the title and desc of the current div while showing the project image
+            $(this).find('.title-cover').css('background', 'rgba(0,0,0,0.15)');
+            $(this).find(".case-img-cover").css('opacity', '1');
+            // Add ken burns effect to the main cover image
+            // $('.bg-project-img').addClass('kburns');
+        });
+        $(this).mouseleave(function(event) {
+            /* Act on the event */
+            // Return siblings title image and desc to full visibility
+            $(this).siblings().find(".lang-logo, .proj-title, .proj-body").css('margin-top', '0px');
+            $(this).siblings().find(".proj-title").css('opacity', '1');
+            $(this).siblings().find(".proj-body").css('opacity', '1');
+            $('#bg-project-bp').css('opacity', '1');
+            // Return visibility to all the info the current div
+            $(this).find('.title-cover').css('background', 'none');
+            $(this).find(".case-img-cover").css('opacity', '0');
+            // Remove ken burns class
+            // $('.bg-project-img').removeClass('kburns');
+            // $(this).siblings().find(".case-img-cover").css('opacity', '1');
+        });
+    });
+    
+    var $sepHt = 0
+    $('.sep-hz').each(function(){
+        $(this).css('top', $sepHt + 'px' );
+        $sepHt += $('#projects').height() / 3;
+    });
+    $(window).resize(function() {
+        var $sepHt = 0
+        $('.sep-hz').each(function(){
+            $(this).css('top', $sepHt + 'px' );
+            $sepHt += $('#projects').height() / 3;
+        });
+        /* Act on the event */
+        $('.case').each(function(){
+            $(this).height($('#projects').height() / 3);
+        });
+    });
+});

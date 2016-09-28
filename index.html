@@ -63,13 +63,14 @@
 		</nav>
 		<div class="about-section-wrapper">
 			<div class="about-section">
-				<div class="" style="font-family: 'Montserrat'">A little about me</div>
-				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>			
+				<div class="">A little about me</div>
+				<span>As a driven individual, I am always searching for a new challenge.  Whether it be 
+				a new trail to run or a new algorithm to tackle, I am always looking for an opportunity to learn 
+				and grow.  My personality as a developer favors team environments, and with experience in AGILE 
+				methodology, I focus on efficient completion of tasks as well as clear communication on 
+				objectives and goals. I have experience full stack developer with a focus on the MEAN stack and the LAMP stack 
+				with the exception of PHP being replaced by Python.  I'm familiar with basic UI/UX concepts and tools and manage my portfolio with Git 
+				(as well as everything else I do).</span>			
 			</div>
 		</div>
 		<div class="controls">
@@ -142,19 +143,29 @@
 				</div>
 			</section>
 		</div>
-		<div class="form-wrapper">
-			<a href="javascript:window.location.href = 'mailto:' + 'pirie' + 'david' + ['a','gma'].join('@') + ['il','com'].join('.')"><i class="fa fa-envelope"></i>  pirie<!---->david<!---->a<!---->@<!---->gmail<!---->.<!---->com</a>
+		<div class="form-wrapper container-fluid">
+			<div class="col-xs-8 col-xs-offset-4 my-email">
+				Contact me:
+			</div>
+			<div class="col-xs-8 col-xs-offset-4 my-email">
+				<a href="javascript:window.location.href = 'mailto:' + 'pirie' + 'david' + ['a','gma'].join('@') + ['il','com'].join('.')"><i class="fa fa-envelope"></i>  pirie<!---->david<!---->a<!---->@<!---->gmail<!---->.<!---->com</a>
+			</div>
 			<form action="mail.php" method="post">
-				<div class="col-md-4 col-md-offset-2">
+				<div class="col-md-4 col-md-offset-4">
 					<div class="form-group">
-						<input name="name" type="text" class="form-control" placeholder="Name..." id="names">
+						<input name="fullName" type="text" class="form-control" placeholder="Name..." id="names">
 					</div>
 					<div class="form-group">
 						<input name="email" type="email" class="form-control" placeholder="Email..." id="email">
 					</div>
+					<div class="form-group">
+						<input name="message" type="text" class="form-control text-area" placeholder="Leave a message..." id="message">
+					</div>
 				</div>
-				<div class="button-holder col-md-1">
-					<button type="submit" class="btn btn-success">Success</button>
+				<div class="button-holder col-md-12">
+					<div class="col-xs-offset-4 col-xs-4 the-button-form text-right">
+						<button type="submit" class="btn btn-success">Success</button>
+					</div>
 				</div>
 			</form>
 		</div>

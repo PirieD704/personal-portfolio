@@ -17,7 +17,7 @@
 
 	<link rel="stylesheet" type="text/css" href="public/stylesheets/styles.css">
 
-	<link href="https://fonts.googleapis.com/css?family=Calligraffitti|Julius+Sans+One|Montserrat|Oleo+Script|Rock+Salt" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Audiowide|Baloo+Bhaina|Days+One|Fredoka+One|Julius+Sans+One|Orbitron|Poppins|Yatra+One" rel="stylesheet">
 
 </head>
 <body ng-controller="portfolioController">
@@ -39,17 +39,28 @@
 		</div>
 <!-- 		<div class="top-bar" height="25px">
 		</div> -->
-		<div class="navbar">
-			<div class="nav-text">
-				<ul>
-					<li class="fade-text"><a>HOME</a></li>
-					<li class="fade-text"><a>ABOUT</a></li>
-					<li class="fade-text"><a>PORTFOLIO</a></li>
-					<li class="fade-text"><a>RESUME</a></li>
-				</ul>
+		<nav id="header" class="navbar navbar-fixed-top">
+			<div id="header-container" class="navbar-container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div id="navbar" class="init-navbar collapse navbar-collapse">
+					<div class="nav-text">
+						<ul>
+							<li class="fade-text"><a>HOME</a></li>
+							<li class="fade-text"><a>ABOUT</a></li>
+							<li class="fade-text"><a>PORTFOLIO</a></li>
+							<li class="fade-text"><a>RESUME</a></li>
+						</ul>
+					</div>
+				</div>
 			</div>
-		</div>
-
+		</nav>
 		<div class="about-section-wrapper">
 			<div class="about-section">
 				<div class="" style="font-family: 'Montserrat'">A little about me</div>
@@ -95,7 +106,7 @@
 				<div>
 					<div id="mosaic">
 						<div id="bg-project-bp" class="screen-size" >
-							<img class="bg-project-bp" src="cd img/Andromeda.jpg">
+							<img class="bg-project-bp" src="img/Andromeda.jpg">
 						</div>
 						<div id="bg-project1" class="screen-size" >
 							<img class="bg-project-img" ng-class="zoomClass1" ng-style="fadeImg1" ng-attr-src="{{cover1}}">

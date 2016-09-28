@@ -24,6 +24,10 @@
 
 $boxColor: #3c3c3c;
 
+body{
+    overflow-x:hidden;
+}
+
 .main-screen{
 	height: 100%;
 	width: 100%;
@@ -43,27 +47,27 @@ canvas{
 }
 
 .main-text{
-    width: 100%;
+	width: 100%;
 	color: #eee;
 	z-index: 2;
 	position: absolute;
 	// margin: auto;
 	font-size: 120px;
-	font-family: 'Oleo Script';
-    text-align: center;
-    padding-top: 20%;
+	font-family: 'Orbitron', sans-serif;
+	text-align: center;
+	padding-top: 20%;
 }
 
 // video {
-//     position: fixed;
-//     top: 50%;
-//     left: 50%;
-//     min-width: 100%;
-//     min-height: 100%;
-//     width: auto;
-//     height: auto;
-//     z-index: -100;
-//     transform: translateX(-50%) translateY(-50%);
+//	 position: fixed;
+//	 top: 50%;
+//	 left: 50%;
+//	 min-width: 100%;
+//	 min-height: 100%;
+//	 width: auto;
+//	 height: auto;
+//	 z-index: -100;
+//	 transform: translateX(-50%) translateY(-50%);
 //  	background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
 // 	background-size: cover;
 // 	transition: 1s opacity;
@@ -88,9 +92,58 @@ canvas{
 	background-color: #4B2F1B;
 }
 
-.navbar {
+.navbar-container {
+    padding: 0px 0px 20px 0px;
+}
+
+.navbar.navbar-fixed-top.fixed-theme {
+    background-color: #222;
+    border-color: #080808;
+    box-shadow: 0 0 5px rgba(0,0,0,.8);
+}
+
+.navbar-brand.fixed-theme {
+    font-size: 30px;
+
+}
+
+.navbar-container.fixed-theme {
+    padding: 0;
+}
+
+.navbar-brand.fixed-theme,
+.navbar-container.fixed-theme,
+.navbar.navbar-fixed-top.fixed-theme,
+.navbar-brand,
+.navbar-container{
+    transition: 0.8s;
+    -webkit-transition:  0.8s;
+}
+
+.init-navbar {
+    font-size: 22px;
+    font-family: 'Orbitron', sans-serif;
 	position: relative;
-	background-color: #271830;
+	/* fallback */
+	background-color: #1a82f7;
+	background: url(images/linear_bg_2.png);
+	background-repeat: repeat-x;
+
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#000000), to(#5584b2));
+
+	/* Safari 5.1, Chrome 10+ */
+	background: -webkit-linear-gradient(top, #5584b2, #000000);
+
+	/* Firefox 3.6+ */
+	background: -moz-linear-gradient(top, #000000, #5584b2);
+
+	/* IE 10 */
+	background: -ms-linear-gradient(top, #000000, #5584b2);
+
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #000000, #5584b2);
+
 	border-radius: 0px;
 	height: 60px;
 	width: 100%;
@@ -99,13 +152,32 @@ canvas{
 	opacity: .90;
 	text-align: center;
 	margin-bottom: 0px;
-	li {
-		display: inline-block;
-		padding: 0px 60px;
-		a {
-			color: #eee;
-		}
-	}
+    border-top: 0px;
+    border-bottom: 0px;
+
+}
+
+#navbar {
+    li {
+        display: inline-block;
+        padding: 0px 60px;
+        a {
+            color: #eee;
+        }
+    }
+}
+
+.fixed-theme{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 26px;
+    transition: 0.8s;
+    -webkit-transition:  0.8s;
+    background-color: #222 !important;
+    border-color: #080808;
+    box-shadow: 0 0 5px rgba(0,0,0,.8);
+    text-align: center;
+    line-height: 60px;
+    opacity: .90;
 }
 
 ul {
@@ -205,205 +277,207 @@ ul {
 }
 
 #projects {
-    position: relative;
-    height: 80vh;
-    margin-top: 30px;
-    font-family: Helvetica;
-    overflow: hidden;
-    .case {
-        width: 33.33%;
-        float: left;
-        background: transparent;
-        position: relative;
-        z-index: 7;
-        cursor: pointer;
-        transition: 0.5s;
-        -moz-transition: 0.5s;
-        -o-transition: 0.5s;
-        -webkit-transition: 0.5s;
-        &:hover {
-            .case-img-cover {
-                img {
-                    -webkit-filter: blur(0px);
-                }
-            }
-        }
-        a {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            left: 0;
-        }
-        .case-img-cover:before {
-            content: "";
-            display: block;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(0,55,255, 0.5);
-            transition: all 0.5s linear;
-            -moz-transition: all 0.5s linear;
-            -o-transition: all 0.5s linear;
-            -webkit-transition: all 0.5s linear;
-            // transition-delay: all 0.5s linear;
-        }
-        .case-img-cover:hover:before {
-            background: none;
-        }
-        .case-img-cover {
-            overflow: hidden;
-            height: 100%;
-            opacity: 0;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 4;
-            transition: 0.5s;
-            -moz-transition: 0.5s;
-            -o-transition: 0.5s;
-            -webkit-transition: 0.5s;
-            img {
-                width: 100%;
-                height: 100%;
-            }
-        }
-        .title-cover {
-            top: 50%;
-            position: absolute;
-            width: 90%;
-            left:  5%;
-            margin-top: -20px;
-            z-index: 10;
-            .lang-logo {
-                position: absolute;
-                top: -40px;
-                right: 50%;
-                width: 40px;
-                transition: 0.5s;
-                -moz-transition: 0.5s;
-                -o-transition: 0.5s;
-                -webkit-transition: 0.5s;
-                transition-delay: 0.2s;
-            }
-            .proj-title {
-                font-size: 28px;
-                font-weight: bold;
-                color: #fff;
-                letter-spacing: 2px;
-                text-align: center;
-                text-transform: uppercase;
-                transition: 0.5s;
-                -moz-transition: 0.5s;
-                -o-transition: 0.5s;
-                -webkit-transition: 0.5s;
-                transition-delay: 0.2s;
-            }
-            .proj-body {
-                text-align: center;
-                font-size: 14px;
-                color: #fff;
-                margin-top: 5px;
-                border-top: 1px solid white;
-                transition: 0.5s;
-                -moz-transition: 0.5s;
-                -o-transition: 0.5s;
-                -webkit-transition: 0.5s;
-            }
-        }
-    }
-    .kburns {
-          animation: kburns 7s ease forwards; /* Change this to alternate to stop the loop. */
-          -ms-animation: kburns 7s ease forwards;
-          -webkit-animation: kburns 7s ease forwards;
-          -moz-animation: kburns 7s ease forwards;
-    }
-    #bg-project-bp {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        z-index: 5;
-        opacity: 1;
-        transition: 0.5s;
-        -moz-transition: 0.5s;
-        -o-transition: 0.5s;
-        -webkit-transition: 0.5s;
-        // @include respond-to(medium-screens) { height: 100%; }
-        // @include respond-to(handhelds) { height: 100%; }
-        img {
-            position: relative;
-            width: 200%;
-            height: 200%;
-            margin-left: -550px;
-            margin-top: -350px;
-            // @include respond-to(medium-screens) { height: 100%; }
-            // @include respond-to(handhelds) { height: 100%; }
-        }
-    }
-    #bg-project1, #bg-project2 {
-        z-index: -1;
-        width: 100%;
-        top: 0;
-        // left: 0;
-        // right: 0;
-        height: 100%;
-        overflow: hidden;
-        transition: 0.5s;
-        -moz-transition: 0.5s;
-        -o-transition: 0.5s;
-        -webkit-transition: 0.5s;
-     //    @include respond-to(medium-screens) { height: 100%; left:0; right:0}
-        // @include respond-to(handhelds) { height: 100%; left:0; right:0;}
-        img {
-            opacity: 1;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            transition: opacity 0.5s ease-in-out;
-            -moz-transition: opacity 0.5s ease-in-out;
-            -o-transition: opacity 0.5s ease-in-out;
-            -webkit-transition: opacity 0.5s ease-in-out;
-            // @include respond-to(medium-screens) { height: 100%; }
-            // @include respond-to(handhelds) { height: 100%; }
-        }
-    }
-    .sep-vt {
-        width: 10px;
-        position: absolute;
-        background: #fff;
-        height: 100%;
-        z-index: 11;
-        pointer-events: none;
-        margin-left: -5px;
-        &.top {
-            top: 0;
-        }
-        &.bottom {
-            bottom: 0;
-        }
-        &.sep-vt1 {
-            left: (100% / 3);
-        }
-        &.sep-vt2 {
-            right: (100% / 3);
-        }
-    }
-    .sep-hz {
-        height: 10px;
-        position: absolute;
-        background: #fff;
-        width: 100%;
-        z-index: 11;
-        margin-top: -5px;
-        pointer-events: none;
-    }
+	position: relative;
+	height: 80vh;
+	margin-top: 30px;
+	font-family: Helvetica;
+	overflow: hidden;
+	.case {
+		width: 33.33%;
+		float: left;
+		background: transparent;
+		position: relative;
+		z-index: 7;
+		cursor: pointer;
+		transition: 0.5s;
+		-moz-transition: 0.5s;
+		-o-transition: 0.5s;
+		-webkit-transition: 0.5s;
+		&:hover {
+			.case-img-cover {
+				img {
+					-webkit-filter: blur(0px);
+				}
+			}
+		}
+		a {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+		}
+		.case-img-cover:before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: rgba(0,55,255, 0.5);
+			transition: all 0.5s linear;
+			-moz-transition: all 0.5s linear;
+			-o-transition: all 0.5s linear;
+			-webkit-transition: all 0.5s linear;
+			// transition-delay: all 0.5s linear;
+		}
+		.case-img-cover:hover:before {
+			background: none;
+		}
+		.case-img-cover {
+			overflow: hidden;
+			height: 100%;
+			opacity: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: 4;
+			transition: 0.5s;
+			-moz-transition: 0.5s;
+			-o-transition: 0.5s;
+			-webkit-transition: 0.5s;
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.title-cover {
+			top: 50%;
+			position: absolute;
+			width: 90%;
+			left:  5%;
+			margin-top: -20px;
+			z-index: 10;
+			.lang-logo {
+				position: absolute;
+				top: -40px;
+				right: 50%;
+				width: 40px;
+				transition: 0.5s;
+				-moz-transition: 0.5s;
+				-o-transition: 0.5s;
+				-webkit-transition: 0.5s;
+				transition-delay: 0.2s;
+			}
+			.proj-title {
+				font-size: 28px;
+				font-weight: bold;
+				color: #fff;
+				letter-spacing: 2px;
+				text-align: center;
+				text-transform: uppercase;
+				transition: 0.5s;
+				-moz-transition: 0.5s;
+				-o-transition: 0.5s;
+				-webkit-transition: 0.5s;
+				transition-delay: 0.2s;
+			}
+			.proj-body {
+				text-align: center;
+				font-size: 14px;
+				color: #fff;
+				margin-top: 5px;
+				border-top: 1px solid white;
+				transition: 0.5s;
+				-moz-transition: 0.5s;
+				-o-transition: 0.5s;
+				-webkit-transition: 0.5s;
+			}
+		}
+	}
+	.kburns {
+		  animation: kburns 7s ease forwards; /* Change this to alternate to stop the loop. */
+		  -ms-animation: kburns 7s ease forwards;
+		  -webkit-animation: kburns 7s ease forwards;
+		  -moz-animation: kburns 7s ease forwards;
+	}
+	#bg-project-bp {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		z-index: 5;
+		opacity: 1;
+		transition: 0.5s;
+		-moz-transition: 0.5s;
+		-o-transition: 0.5s;
+		-webkit-transition: 0.5s;
+		// @include respond-to(medium-screens) { height: 100%; }
+		// @include respond-to(handhelds) { height: 100%; }
+		img {
+			position: relative;
+			// width: 200%;
+			// height: 200%;
+			// margin-left: -550px;
+			// margin-top: -350px;
+			width: 100%;
+			height: 100%;
+			// @include respond-to(medium-screens) { height: 100%; }
+			// @include respond-to(handhelds) { height: 100%; }
+		}
+	}
+	#bg-project1, #bg-project2 {
+		z-index: -1;
+		width: 100%;
+		top: 0;
+		// left: 0;
+		// right: 0;
+		height: 100%;
+		overflow: hidden;
+		transition: 0.5s;
+		-moz-transition: 0.5s;
+		-o-transition: 0.5s;
+		-webkit-transition: 0.5s;
+	 //	@include respond-to(medium-screens) { height: 100%; left:0; right:0}
+		// @include respond-to(handhelds) { height: 100%; left:0; right:0;}
+		img {
+			opacity: 1;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			transition: opacity 0.5s ease-in-out;
+			-moz-transition: opacity 0.5s ease-in-out;
+			-o-transition: opacity 0.5s ease-in-out;
+			-webkit-transition: opacity 0.5s ease-in-out;
+			// @include respond-to(medium-screens) { height: 100%; }
+			// @include respond-to(handhelds) { height: 100%; }
+		}
+	}
+	.sep-vt {
+		width: 10px;
+		position: absolute;
+		background: #fff;
+		height: 100%;
+		z-index: 11;
+		pointer-events: none;
+		margin-left: -5px;
+		&.top {
+			top: 0;
+		}
+		&.bottom {
+			bottom: 0;
+		}
+		&.sep-vt1 {
+			left: (100% / 3);
+		}
+		&.sep-vt2 {
+			right: (100% / 3);
+		}
+	}
+	.sep-hz {
+		height: 10px;
+		position: absolute;
+		background: #fff;
+		width: 100%;
+		z-index: 11;
+		margin-top: -5px;
+		pointer-events: none;
+	}
 }
 .clear {
-    clear: both;
+	clear: both;
 }
 
 

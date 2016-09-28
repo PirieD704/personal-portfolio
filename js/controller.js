@@ -29,7 +29,7 @@ portfolio.controller('portfolioController', ['$scope', '$timeout', function($sco
             imageSrc: "img/portfolio/blackjack.png",
             cover: "img/portfolio/blackjack2.JPG",
             smallCover: "img/portfolio/blackjack.png",
-            url: "/blackjack",
+            url: "davidapirie.com/blackjack",
             desc: "Javascript, HTML, CSS"
         },
         {
@@ -45,7 +45,7 @@ portfolio.controller('portfolioController', ['$scope', '$timeout', function($sco
             imageSrc: "img/portfolio/chat_room.png",
             cover: "img/portfolio/chat-room2.jpg",
             smallCover: "img/portfolio/chat_room.png",
-            url: "/chat-room",
+            url: "davidapirie.com/chat-room",
             desc: "Socket IO, AngularJS, Javascript"
         },
         {
@@ -53,8 +53,7 @@ portfolio.controller('portfolioController', ['$scope', '$timeout', function($sco
             imageSrc: "img/portfolio/zombies.png",
             cover: "img/portfolio/zombies2.jpg",
             smallCover: "img/portfolio/zombies.png",
-            // url: "pages/youtube/home.html",
-            url: "/zombies",
+            url: "davidapirie.com/zombies",
             desc: "Leaflet, Javascript, HTML, CSS "
         },
         {
@@ -62,11 +61,35 @@ portfolio.controller('portfolioController', ['$scope', '$timeout', function($sco
             imageSrc: "img/me_on_mtn.jpg",
             cover: "img/snow-lake.jpg",
             smallCover: "img/me_on_mtn.jpg",
-            url: "http://www.children1st.care",
+            url: "davidapirie.com/fresh-kicks",
             desc: "AngularJS, Express, NodeJS, MongoDB"
         },
         {
             projectName: "Python game",
+            imageSrc: "img/galaxy.jpg",
+            cover: "img/funkyBackground.jpg",
+            smallCover: "img/galaxy.png",
+            url: "https://github.com/PirieD704/pygame_first",
+            desc: "Python, PyGame"
+        },
+        {
+            projectName: "Coming Soon",
+            imageSrc: "img/portfolio/zombies.png",
+            cover: "img/portfolio/zombies2.jpg",
+            smallCover: "img/portfolio/zombies.png",
+            url: "davidapirie.com/zombies",
+            desc: "Leaflet, Javascript, HTML, CSS "
+        },
+        {
+            projectName: "Coming Soon",
+            imageSrc: "img/me_on_mtn.jpg",
+            cover: "img/snow-lake.jpg",
+            smallCover: "img/me_on_mtn.jpg",
+            url: "davidapirie.com/fresh-kicks",
+            desc: "AngularJS, Express, NodeJS, MongoDB"
+        },
+        {
+            projectName: "Comoing Soon",
             imageSrc: "img/galaxy.jpg",
             cover: "img/funkyBackground.jpg",
             smallCover: "img/galaxy.png",

@@ -86,6 +86,12 @@ canvas{
 	text-align: center;
 }
 
+////////////////////////////////////////////////////
+
+// The start of the navbar section
+
+////////////////////////////////////////////////////
+
 .top-bar {
 	height: 19px;
 	width: 100%;
@@ -185,6 +191,12 @@ ul {
 	-webkit-padding-start: 0px;
 }
 
+////////////////////////////////////////////////////
+
+// The start of the about section
+
+////////////////////////////////////////////////////
+
 .about-section-wrapper{
 	// // background-color: #eee;
 	// background: rgba(107,146,185,1);
@@ -203,25 +215,44 @@ ul {
 	background: -ms-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
 	background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff', GradientType=0 );
-	width:100%;
+	width: 100%;
+	text-align: center;
+	.crop-photo{
+		padding-top: 200px;
+		margin: auto;
+		width: 300px;
+		height: 300px;
+		img{
+			width: 100%;
+		}
+	}
 }
 
 .about-section{
-
 	// background-color: #eee;
 	font-size: 26px;
 	width: 70%;
 	display: block;
 	margin: auto;
-	padding-top: 600px;
 	padding-bottom: 100px;
+	padding-top: 200px;
+	.about-title{
+		font-size: 30px;
+		font-family: "Orbitron";
+	}
 	span{
 		color: $boxColor;
 	}
 }
 
+////////////////////////////////////////////////////
+
+// The start of the skills section
+
+////////////////////////////////////////////////////
+
 .controls{
-	padding-top: 400px;
+	padding-top: 250px;
 	text-align: center;
 	color: #eee;
 	button{
@@ -234,7 +265,9 @@ ul {
 		background-color: #68b8c4;
 	}
 	label {
-		color: white;
+		font-family: "Orbitron", Helvetica;
+		font-size: 20px;
+		color: $boxColor;
 	}
 }
 
@@ -273,11 +306,21 @@ ul {
 #mix-wrapper {
 	height: 700px;
 }
+
+////////////////////////////////////////////////////
+
+// The start of the portfolio section
+
+////////////////////////////////////////////////////
+
 .projects-wrapper{
 	height: 1000px;
 	text-align: center;
 	display: block;
 	background-color: #ffffff;
+	.section-header{
+		font-family: "Orbitron";
+	}
 }
 
 .projects-title{
@@ -489,9 +532,17 @@ ul {
 	clear: both;
 }
 
+////////////////////////////////////////////////////
+
+// The start of the form section
+
+////////////////////////////////////////////////////
+
 .form-wrapper{
 	margin-top: 300px;
 	margin-bottom: 300px;
+	font-family: "Orbitron", Helvetica;
+
 	.my-email{
 		padding-bottom: 30px;
 	}

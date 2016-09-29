@@ -29,7 +29,7 @@ portfolio.controller('portfolioController', ['$scope', '$timeout', function($sco
             imageSrc: "img/portfolio/blackjack.png",
             cover: "img/portfolio/blackjack2.JPG",
             smallCover: "img/portfolio/blackjack.png",
-            url: "davidapirie.com/blackjack",
+            url: "/blackjack",
             desc: "Javascript, HTML, CSS"
         },
         {
@@ -45,7 +45,7 @@ portfolio.controller('portfolioController', ['$scope', '$timeout', function($sco
             imageSrc: "img/portfolio/chat_room.png",
             cover: "img/portfolio/chat-room2.jpg",
             smallCover: "img/portfolio/chat_room.png",
-            url: "davidapirie.com/chat-room",
+            url: "/chat-room",
             desc: "Socket IO, AngularJS, Javascript"
         },
         {
@@ -53,7 +53,7 @@ portfolio.controller('portfolioController', ['$scope', '$timeout', function($sco
             imageSrc: "img/portfolio/zombies.png",
             cover: "img/portfolio/zombies2.jpg",
             smallCover: "img/portfolio/zombies.png",
-            url: "davidapirie.com/zombies",
+            url: "/zombies",
             desc: "Leaflet, Javascript, HTML, CSS "
         },
         {
@@ -61,7 +61,7 @@ portfolio.controller('portfolioController', ['$scope', '$timeout', function($sco
             imageSrc: "img/me_on_mtn.jpg",
             cover: "img/snow-lake.jpg",
             smallCover: "img/me_on_mtn.jpg",
-            url: "davidapirie.com/fresh-kicks",
+            url: "/fresh-kicks",
             desc: "AngularJS, Express, NodeJS, MongoDB"
         },
         {
@@ -77,7 +77,7 @@ portfolio.controller('portfolioController', ['$scope', '$timeout', function($sco
             imageSrc: "img/portfolio/zombies.png",
             cover: "img/portfolio/zombies2.jpg",
             smallCover: "img/portfolio/zombies.png",
-            url: "davidapirie.com/zombies",
+            url: "/zombies",
             desc: "Leaflet, Javascript, HTML, CSS "
         },
         {
@@ -85,7 +85,7 @@ portfolio.controller('portfolioController', ['$scope', '$timeout', function($sco
             imageSrc: "img/me_on_mtn.jpg",
             cover: "img/snow-lake.jpg",
             smallCover: "img/me_on_mtn.jpg",
-            url: "davidapirie.com/fresh-kicks",
+            url: "/fresh-kicks",
             desc: "AngularJS, Express, NodeJS, MongoDB"
         },
         {

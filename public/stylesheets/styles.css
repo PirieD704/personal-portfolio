@@ -266,23 +266,24 @@ ul {
 
 /* line 316, ../../compass/sass/styles.scss */
 .projects-wrapper {
+  padding-top: 200px;
   height: 1000px;
   text-align: center;
   display: block;
   background-color: #ffffff;
 }
-/* line 321, ../../compass/sass/styles.scss */
+/* line 322, ../../compass/sass/styles.scss */
 .projects-wrapper .section-header {
   font-family: "Orbitron";
 }
 
-/* line 326, ../../compass/sass/styles.scss */
+/* line 327, ../../compass/sass/styles.scss */
 .projects-title {
   font-size: 30px;
   text-align: center;
 }
 
-/* line 331, ../../compass/sass/styles.scss */
+/* line 332, ../../compass/sass/styles.scss */
 #projects {
   position: relative;
   height: 80vh;
@@ -290,7 +291,7 @@ ul {
   font-family: Helvetica;
   overflow: hidden;
 }
-/* line 337, ../../compass/sass/styles.scss */
+/* line 338, ../../compass/sass/styles.scss */
 #projects .case {
   width: 33.33%;
   float: left;
@@ -303,18 +304,18 @@ ul {
   -o-transition: 0.5s;
   -webkit-transition: 0.5s;
 }
-/* line 350, ../../compass/sass/styles.scss */
+/* line 351, ../../compass/sass/styles.scss */
 #projects .case:hover .case-img-cover img {
   -webkit-filter: blur(0px);
 }
-/* line 355, ../../compass/sass/styles.scss */
+/* line 356, ../../compass/sass/styles.scss */
 #projects .case a {
   width: 100%;
   height: 100%;
   position: absolute;
   left: 0;
 }
-/* line 361, ../../compass/sass/styles.scss */
+/* line 362, ../../compass/sass/styles.scss */
 #projects .case .case-img-cover:before {
   content: "";
   display: block;
@@ -329,11 +330,11 @@ ul {
   -o-transition: all 0.5s linear;
   -webkit-transition: all 0.5s linear;
 }
-/* line 376, ../../compass/sass/styles.scss */
+/* line 377, ../../compass/sass/styles.scss */
 #projects .case .case-img-cover:hover:before {
   background: none;
 }
-/* line 379, ../../compass/sass/styles.scss */
+/* line 380, ../../compass/sass/styles.scss */
 #projects .case .case-img-cover {
   overflow: hidden;
   height: 100%;
@@ -348,12 +349,12 @@ ul {
   -o-transition: 0.5s;
   -webkit-transition: 0.5s;
 }
-/* line 392, ../../compass/sass/styles.scss */
+/* line 393, ../../compass/sass/styles.scss */
 #projects .case .case-img-cover img {
   width: 100%;
   height: 100%;
 }
-/* line 397, ../../compass/sass/styles.scss */
+/* line 398, ../../compass/sass/styles.scss */
 #projects .case .title-cover {
   top: 50%;
   position: absolute;
@@ -362,7 +363,7 @@ ul {
   margin-top: -20px;
   z-index: 10;
 }
-/* line 404, ../../compass/sass/styles.scss */
+/* line 405, ../../compass/sass/styles.scss */
 #projects .case .title-cover .lang-logo {
   position: absolute;
   top: -40px;
@@ -374,7 +375,7 @@ ul {
   -webkit-transition: 0.5s;
   transition-delay: 0.2s;
 }
-/* line 415, ../../compass/sass/styles.scss */
+/* line 416, ../../compass/sass/styles.scss */
 #projects .case .title-cover .proj-title {
   font-size: 28px;
   font-weight: bold;
@@ -388,7 +389,7 @@ ul {
   -webkit-transition: 0.5s;
   transition-delay: 0.2s;
 }
-/* line 428, ../../compass/sass/styles.scss */
+/* line 429, ../../compass/sass/styles.scss */
 #projects .case .title-cover .proj-body {
   text-align: center;
   font-size: 14px;
@@ -400,7 +401,7 @@ ul {
   -o-transition: 0.5s;
   -webkit-transition: 0.5s;
 }
-/* line 441, ../../compass/sass/styles.scss */
+/* line 442, ../../compass/sass/styles.scss */
 #projects .kburns {
   animation: kburns 7s ease forwards;
   /* Change this to alternate to stop the loop. */
@@ -408,7 +409,7 @@ ul {
   -webkit-animation: kburns 7s ease forwards;
   -moz-animation: kburns 7s ease forwards;
 }
-/* line 447, ../../compass/sass/styles.scss */
+/* line 448, ../../compass/sass/styles.scss */
 #projects #bg-project-bp {
   position: absolute;
   width: 100%;
@@ -420,13 +421,13 @@ ul {
   -o-transition: 0.5s;
   -webkit-transition: 0.5s;
 }
-/* line 459, ../../compass/sass/styles.scss */
+/* line 460, ../../compass/sass/styles.scss */
 #projects #bg-project-bp img {
   position: relative;
   width: 100%;
   height: 100%;
 }
-/* line 471, ../../compass/sass/styles.scss */
+/* line 472, ../../compass/sass/styles.scss */
 #projects #bg-project1, #projects #bg-project2 {
   z-index: -1;
   width: 100%;
@@ -438,7 +439,7 @@ ul {
   -o-transition: 0.5s;
   -webkit-transition: 0.5s;
 }
-/* line 485, ../../compass/sass/styles.scss */
+/* line 486, ../../compass/sass/styles.scss */
 #projects #bg-project1 img, #projects #bg-project2 img {
   opacity: 1;
   position: absolute;
@@ -451,7 +452,7 @@ ul {
   -o-transition: opacity 0.5s ease-in-out;
   -webkit-transition: opacity 0.5s ease-in-out;
 }
-/* line 500, ../../compass/sass/styles.scss */
+/* line 501, ../../compass/sass/styles.scss */
 #projects .sep-vt {
   width: 10px;
   position: absolute;
@@ -461,23 +462,23 @@ ul {
   pointer-events: none;
   margin-left: -5px;
 }
-/* line 508, ../../compass/sass/styles.scss */
+/* line 509, ../../compass/sass/styles.scss */
 #projects .sep-vt.top {
   top: 0;
 }
-/* line 511, ../../compass/sass/styles.scss */
+/* line 512, ../../compass/sass/styles.scss */
 #projects .sep-vt.bottom {
   bottom: 0;
 }
-/* line 514, ../../compass/sass/styles.scss */
+/* line 515, ../../compass/sass/styles.scss */
 #projects .sep-vt.sep-vt1 {
   left: 33.33333%;
 }
-/* line 517, ../../compass/sass/styles.scss */
+/* line 518, ../../compass/sass/styles.scss */
 #projects .sep-vt.sep-vt2 {
   right: 33.33333%;
 }
-/* line 521, ../../compass/sass/styles.scss */
+/* line 522, ../../compass/sass/styles.scss */
 #projects .sep-hz {
   height: 10px;
   position: absolute;
@@ -488,22 +489,22 @@ ul {
   pointer-events: none;
 }
 
-/* line 531, ../../compass/sass/styles.scss */
+/* line 532, ../../compass/sass/styles.scss */
 .clear {
   clear: both;
 }
 
-/* line 541, ../../compass/sass/styles.scss */
+/* line 542, ../../compass/sass/styles.scss */
 .form-wrapper {
   margin-top: 300px;
   margin-bottom: 300px;
   font-family: "Orbitron", Helvetica;
 }
-/* line 546, ../../compass/sass/styles.scss */
+/* line 547, ../../compass/sass/styles.scss */
 .form-wrapper .my-email {
   padding-bottom: 30px;
 }
-/* line 549, ../../compass/sass/styles.scss */
+/* line 550, ../../compass/sass/styles.scss */
 .form-wrapper .text-area {
   height: 30px;
 }

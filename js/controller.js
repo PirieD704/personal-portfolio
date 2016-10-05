@@ -35,7 +35,7 @@ portfolio.controller('portfolioController', ['$scope', '$timeout', function($sco
         {
             projectName: "DigitalCrafts Graduate",
             imageSrc: "img/portfolio/dc-logo.png",
-            cover: "img/custom.png",
+            cover: "img/portfolio/dc-students.jpg",
             smallCover: "img/portfolio/dc-logo.png",
             url: "http://www.digitalcrafts.com/",
             desc: ""
@@ -59,42 +59,42 @@ portfolio.controller('portfolioController', ['$scope', '$timeout', function($sco
         {
             projectName: "Ecommerce Shoes",
             imageSrc: "img/me_on_mtn.jpg",
-            cover: "img/snow-lake.jpg",
+            cover: "img/portfolio/shoes-bg.jpg",
             smallCover: "img/me_on_mtn.jpg",
             url: "/fresh-kicks",
             desc: "AngularJS, Express, NodeJS, MongoDB"
         },
         {
-            projectName: "Python game",
-            imageSrc: "img/galaxy.jpg",
-            cover: "img/funkyBackground.jpg",
-            smallCover: "img/galaxy.png",
-            url: "https://github.com/PirieD704/pygame_first",
-            desc: "Python, PyGame"
-        },
-        {
-            projectName: "Coming Soon",
-            imageSrc: "img/portfolio/zombies.png",
-            cover: "img/portfolio/zombies2.jpg",
-            smallCover: "img/portfolio/zombies.png",
-            url: "/zombies",
-            desc: "Leaflet, Javascript, HTML, CSS "
-        },
-        {
-            projectName: "Coming Soon",
+            projectName: "Python Game",
             imageSrc: "img/me_on_mtn.jpg",
-            cover: "img/snow-lake.jpg",
+            cover: "img/portfolio/heli-bg.jpg",
             smallCover: "img/me_on_mtn.jpg",
-            url: "/fresh-kicks",
-            desc: "AngularJS, Express, NodeJS, MongoDB"
-        },
-        {
-            projectName: "Comoing Soon",
-            imageSrc: "img/galaxy.jpg",
-            cover: "img/funkyBackground.jpg",
-            smallCover: "img/galaxy.png",
             url: "https://github.com/PirieD704/pygame_first",
             desc: "Python, PyGame"
+        },
+        {
+            projectName: "Tic Tac Toe",
+            imageSrc: "img/portfolio/tictactoe-game.png",
+            cover: "img/portfolio/tictactoe-bg.jpg",
+            smallCover: "img/portfolio/tictactoe-game.png",
+            url: "/zombies",
+            desc: "Javascript, HTML, CSS "
+        },
+        {
+            projectName: "Movie App",
+            imageSrc: "img/portfolio/movie-app.png",
+            cover: "img/portfolio/hollywood-sign.jpg",
+            smallCover: "img/portfolio/movie-app.png",
+            url: "/fresh-kicks",
+            desc: "AngularJS, HTML, CSS"
+        },
+        {
+            projectName: "Social Site",
+            imageSrc: "img/me_on_mtn.jpg",
+            cover: "img/portfolio/social_site_bg.jpg",
+            smallCover: "img/me_on_mtn.jpg",
+            url: "https://github.com/PirieD704/pygame_first",
+            desc: "Python, Linux, MySQL, Javascript, CSS"
         }
     ]
 

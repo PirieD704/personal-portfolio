@@ -23,7 +23,7 @@
 <body ng-controller="portfolioController">
 
 <!-- 	<div class="container-fluid"> -->
-		<div class="row main-screen">
+		<div id="home" class="row main-screen">
 <!-- 			<video poster="img/funkyBackground.jpg" id="bgvid" loop playsinline autoplay muted>
 				<source src="img/timelapse.mp4" type="video/mp4">
 			</video> -->
@@ -52,16 +52,17 @@
 				<div id="navbar" class="init-navbar collapse navbar-collapse">
 					<div class="nav-text">
 						<ul>
-							<li class="fade-text"><a>HOME</a></li>
-							<li class="fade-text"><a>ABOUT</a></li>
-							<li class="fade-text"><a>PORTFOLIO</a></li>
-							<li class="fade-text"><a>RESUME</a></li>
+							<li class="fade-text page-scroll"><a href="#home">HOME</a></li>
+							<li class="fade-text page-scroll"><a href="#about">ABOUT</a></li>
+							<li class="fade-text page-scroll"><a href="#portfolio">PORTFOLIO</a></li>
+							<li class="fade-text page-scroll"><a href="">RESUME</a></li>
+							<li class="fade-text page-scroll"><a href="#contact">CONTACT</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</nav>
-		<div class="about-section-wrapper">
+		<div id="about" class="about-section-wrapper">
 			<div class=" crop-photo">
 				<img src="img/headshot-crop.png">
 			</div>
@@ -72,8 +73,7 @@
 				and grow.  My personality as a developer favors team environments, and with experience in AGILE 
 				methodology, I focus on efficient completion of tasks as well as clear communication on 
 				objectives and goals. I have experience full stack developer with a focus on the MEAN stack and the LAMP stack 
-				with the exception of PHP being replaced by Python.  I'm familiar with basic UI/UX concepts and tools and manage my portfolio with Git 
-				(as well as everything else I do).</span>			
+				with the exception of PHP being replaced by Python.  I'm familiar with basic UI/UX concepts and tools and manage my entire portfolio with Git .</span>			
 			</div>
 		</div>
 		<div class="controls">
@@ -104,7 +104,7 @@
 	  			<div class="mix category-2 wow slideInRight" data-wow-offset="50" data-myorder="17"><img src="dev-logos/ionic.png"></div>
 	  		</div>
   		</div>
-		<div class="container projects-wrapper">
+		<div id="portfolio" class="container projects-wrapper">
 			<h1 id="portfolio" class="section-header">My Work</h1>
 			<section id="projects" ng-controller="portfolioController">
 				<div>
@@ -146,7 +146,7 @@
 				</div>
 			</section>
 		</div>
-		<div class="form-wrapper container-fluid">
+		<div id="contact" class="form-wrapper container-fluid">
 			<div class="col-xs-8 col-xs-offset-4 my-email">
 				Contact me:
 			</div>

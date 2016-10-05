@@ -77,7 +77,7 @@ portfolio.controller('portfolioController', ['$scope', '$timeout', function($sco
             imageSrc: "img/portfolio/tictactoe-game.png",
             cover: "img/portfolio/tictactoe-bg.jpg",
             smallCover: "img/portfolio/tictactoe-game.png",
-            url: "/zombies",
+            url: "/ticTacToe",
             desc: "Javascript, HTML, CSS "
         },
         {
@@ -85,7 +85,7 @@ portfolio.controller('portfolioController', ['$scope', '$timeout', function($sco
             imageSrc: "img/portfolio/movie-app.png",
             cover: "img/portfolio/hollywood-sign.jpg",
             smallCover: "img/portfolio/movie-app.png",
-            url: "/fresh-kicks",
+            url: "/movie-app",
             desc: "AngularJS, HTML, CSS"
         },
         {

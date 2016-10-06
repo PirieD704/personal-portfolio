@@ -403,11 +403,11 @@ ul {
 }
 /* line 433, ../../compass/sass/styles.scss */
 #projects .kburns {
-  animation: kburns 7s ease forwards;
+  animation: kburns 10s ease forwards;
   /* Change this to alternate to stop the loop. */
-  -ms-animation: kburns 7s ease forwards;
-  -webkit-animation: kburns 7s ease forwards;
-  -moz-animation: kburns 7s ease forwards;
+  -ms-animation: kburns 10s ease forwards;
+  -webkit-animation: kburns 10s ease forwards;
+  -moz-animation: kburns 10s ease forwards;
 }
 /* line 439, ../../compass/sass/styles.scss */
 #projects #bg-project-bp {
@@ -494,17 +494,34 @@ ul {
   clear: both;
 }
 
-/* line 533, ../../compass/sass/styles.scss */
+@keyframes kburns {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  95% {
+    transform: scale3d(1.5, 1.5, 1.5) translate3d(-190px, -120px, 0px);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  100% {
+    transform: scale3d(2, 2, 2) translate3d(-170px, -100px, 0px);
+    opacity: 0;
+  }
+}
+/* line 551, ../../compass/sass/styles.scss */
 .form-wrapper {
   margin-top: 300px;
   margin-bottom: 300px;
   font-family: "Orbitron", Helvetica;
 }
-/* line 538, ../../compass/sass/styles.scss */
+/* line 556, ../../compass/sass/styles.scss */
 .form-wrapper .my-email {
   padding-bottom: 30px;
 }
-/* line 541, ../../compass/sass/styles.scss */
+/* line 559, ../../compass/sass/styles.scss */
 .form-wrapper .text-area {
   height: 30px;
 }

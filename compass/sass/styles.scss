@@ -431,10 +431,10 @@ ul {
 		}
 	}
 	.kburns {
-		  animation: kburns 7s ease forwards; /* Change this to alternate to stop the loop. */
-		  -ms-animation: kburns 7s ease forwards;
-		  -webkit-animation: kburns 7s ease forwards;
-		  -moz-animation: kburns 7s ease forwards;
+		  animation: kburns 10s ease forwards; /* Change this to alternate to stop the loop. */
+		  -ms-animation: kburns 10s ease forwards;
+		  -webkit-animation: kburns 10s ease forwards;
+		  -moz-animation: kburns 10s ease forwards;
 	}
 	#bg-project-bp {
 		position: absolute;
@@ -522,6 +522,24 @@ ul {
 }
 .clear {
 	clear: both;
+}
+
+@keyframes kburns {
+    0% {
+      opacity: 0;
+    }
+    5% {
+      opacity: 1;
+    }
+    95% {
+        transform: scale3d(1.5, 1.5, 1.5) translate3d(-190px, -120px, 0px);
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+    100% {
+        transform: scale3d(2, 2, 2) translate3d(-170px, -100px, 0px);
+        opacity: 0;
+    }
 }
 
 ////////////////////////////////////////////////////

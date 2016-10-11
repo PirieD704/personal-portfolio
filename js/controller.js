@@ -58,7 +58,7 @@ portfolio.controller('portfolioController', ['$scope', '$timeout', function($sco
         },
         {
             projectName: "Ecommerce Shoes",
-            imageSrc: "img/me_on_mtn.jpg",
+            imageSrc: "img/portfolio/shoes.png",
             cover: "img/portfolio/shoes-bg.jpg",
             smallCover: "img/me_on_mtn.jpg",
             url: "/fresh-kicks",

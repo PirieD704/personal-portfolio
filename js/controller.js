@@ -60,7 +60,7 @@ portfolio.controller('portfolioController', ['$scope', '$timeout', function($sco
             projectName: "Ecommerce Shoes",
             imageSrc: "img/portfolio/shoes.png",
             cover: "img/portfolio/shoes-bg.jpg",
-            smallCover: "img/me_on_mtn.jpg",
+            smallCover: "img/portfolio/shoes.png",
             url: "/fresh-kicks",
             desc: "AngularJS, Express, NodeJS, MongoDB"
         },

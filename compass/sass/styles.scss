@@ -25,7 +25,11 @@
 $boxColor: #3c3c3c;
 
 body{
-    overflow-x:hidden;
+    overflow-x: hidden;
+}
+// this class makes the scrollbar hidden
+.flexscroll::-webkit-scrollbar {
+	width: 0px;
 }
 
 .main-screen{
@@ -33,9 +37,9 @@ body{
 	width: 100%;
 	position: relative;
 }
-
+// the width must be set to 102vw in order to cover the actual full window
 canvas{
-	width: 100vw;
+	width: 102vw;
 	position: absolute;
 	display: block;
 	background-color: #000;

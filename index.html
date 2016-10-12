@@ -20,7 +20,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Audiowide|Baloo+Bhaina|Days+One|Fredoka+One|Julius+Sans+One|Orbitron|Poppins|Yatra+One" rel="stylesheet">
 
 </head>
-<body ng-controller="portfolioController">
+<body ng-controller="portfolioController" class="flexscroll">
 
 <!-- 	<div class="container-fluid"> -->
 		<div id="home" class="row main-screen">
@@ -33,9 +33,9 @@
 			<div class="title-occupation">
 				Web Developer
 			</div> -->
-			<canvas id="the-canvas" height="1100px" width="1440px">
+			<canvas id="the-canvas" class="flexscroll" height="1100px" width="1440px">
 			</canvas>
-			<div class="main-text">Hi I'm David</div>
+			<div class="main-text animated lightSpeedIn">Hi I'm David</div>
 		</div>
 <!-- 		<div class="top-bar" height="25px">
 		</div> -->
@@ -63,10 +63,10 @@
 			</div>
 		</nav>
 		<div id="about" class="about-section-wrapper">
-			<div class=" crop-photo">
+			<div class="crop-photo wow fadeInUp" data-wow-offset='300'>
 				<img src="img/headshot-crop.png">
 			</div>
-			<div class="about-section">
+			<div class="about-section wow fadeInDown" data-wow-offset='300'>
 				<div class="about-title">A little about me</div>
 				<span>As a driven individual, I am always searching for a new challenge.  Whether it be 
 				a new trail to run or a new algorithm to tackle, I am always looking for an opportunity to learn 

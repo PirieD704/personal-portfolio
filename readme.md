@@ -1,4 +1,4 @@
-#This is my personal Portfolio
+#This is my personal portfolio
 
 Built with:
 * Javascript

@@ -93,7 +93,7 @@ portfolio.controller('portfolioController', ['$scope', '$timeout', function($sco
             imageSrc: "img/portfolio/bawk.png",
             cover: "img/portfolio/social_site_bg.jpg",
             smallCover: "img/portfolio/bawk.png",
-            url: "www.davidapirie.com:5000",
+            url: "http://www.davidapirie.com:5000",
             desc: "Python, Linux, MySQL, Javascript, CSS"
         }
     ]

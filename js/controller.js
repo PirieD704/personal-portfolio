@@ -93,7 +93,7 @@ portfolio.controller('portfolioController', ['$scope', '$timeout', function($sco
             imageSrc: "img/me_on_mtn.jpg",
             cover: "img/portfolio/social_site_bg.jpg",
             smallCover: "img/me_on_mtn.jpg",
-            url: "https://github.com/PirieD704/pygame_first",
+            url: ":5000",
             desc: "Python, Linux, MySQL, Javascript, CSS"
         }
     ]

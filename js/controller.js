@@ -90,10 +90,10 @@ portfolio.controller('portfolioController', ['$scope', '$timeout', function($sco
         },
         {
             projectName: "Social Site",
-            imageSrc: "img/me_on_mtn.jpg",
+            imageSrc: "img/portfolio/bawk.png",
             cover: "img/portfolio/social_site_bg.jpg",
-            smallCover: "img/me_on_mtn.jpg",
-            url: ":5000",
+            smallCover: "img/portfolio/bawk.png",
+            url: "www.davidapirie.com:5000",
             desc: "Python, Linux, MySQL, Javascript, CSS"
         }
     ]

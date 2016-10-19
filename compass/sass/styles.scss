@@ -528,6 +528,17 @@ ul {
 	clear: both;
 }
 
+#git-hub-links{
+	color: #3c3c3c;
+	margin-top: 325px;
+	font-size: 24px;
+	text-align: center;
+	.was-h2 {
+		font-size: 34px;
+		font-family: "Orbitron";
+	}
+}
+
 @keyframes kburns {
     0% {
       opacity: 0;
@@ -553,7 +564,7 @@ ul {
 ////////////////////////////////////////////////////
 
 .form-wrapper{
-	margin-top: 300px;
+	margin-top: 500px;
 	margin-bottom: 300px;
 	font-family: "Orbitron", Helvetica;
 

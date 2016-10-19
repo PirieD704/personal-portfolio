@@ -146,6 +146,12 @@
 				</div>
 			</section>
 		</div>
+		<div id="git-hub-links">
+			<div class="was-h2">GitHub Links for Projects</div>
+			<div class="links" ng-repeat="proj in portfolio">
+				<div class="the-gh-projects"><a href="{{proj.gitHubLink}}">{{proj.projectName}}</a></div>
+			</div>
+		</div>
 		<div id="contact" class="form-wrapper container-fluid">
 			<div class="col-xs-8 col-xs-offset-4 my-email">
 				Contact me:

@@ -499,6 +499,19 @@ ul {
   clear: both;
 }
 
+/* line 531, ../../compass/sass/styles.scss */
+#git-hub-links {
+  color: #3c3c3c;
+  margin-top: 325px;
+  font-size: 24px;
+  text-align: center;
+}
+/* line 536, ../../compass/sass/styles.scss */
+#git-hub-links .was-h2 {
+  font-size: 34px;
+  font-family: "Orbitron";
+}
+
 @keyframes kburns {
   0% {
     opacity: 0;
@@ -516,17 +529,17 @@ ul {
     opacity: 0;
   }
 }
-/* line 555, ../../compass/sass/styles.scss */
+/* line 566, ../../compass/sass/styles.scss */
 .form-wrapper {
-  margin-top: 300px;
+  margin-top: 500px;
   margin-bottom: 300px;
   font-family: "Orbitron", Helvetica;
 }
-/* line 560, ../../compass/sass/styles.scss */
+/* line 571, ../../compass/sass/styles.scss */
 .form-wrapper .my-email {
   padding-bottom: 30px;
 }
-/* line 563, ../../compass/sass/styles.scss */
+/* line 574, ../../compass/sass/styles.scss */
 .form-wrapper .text-area {
   height: 30px;
 }

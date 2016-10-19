@@ -30,6 +30,7 @@ portfolio.controller('portfolioController', ['$scope', '$timeout', function($sco
             cover: "img/portfolio/blackjack2.JPG",
             smallCover: "img/portfolio/blackjack.png",
             url: "/blackjack",
+            gitHubLink: "https://github.com/PirieD704/blackJack",
             desc: "Javascript, HTML, CSS"
         },
         {
@@ -38,6 +39,7 @@ portfolio.controller('portfolioController', ['$scope', '$timeout', function($sco
             cover: "img/portfolio/dc-students.jpg",
             smallCover: "img/portfolio/dc-logo.png",
             url: "http://www.digitalcrafts.com/",
+            gitHubLink: "https://github.com/PirieD704/personal-portfolio",
             desc: ""
         },
         {
@@ -46,6 +48,7 @@ portfolio.controller('portfolioController', ['$scope', '$timeout', function($sco
             cover: "img/portfolio/chat-room2.jpg",
             smallCover: "img/portfolio/chat_room.png",
             url: "/chat-room",
+            gitHubLink: "https://github.com/PirieD704/chat-room",
             desc: "Socket IO, AngularJS, Javascript"
         },
         {
@@ -54,6 +57,7 @@ portfolio.controller('portfolioController', ['$scope', '$timeout', function($sco
             cover: "img/portfolio/zombies2.jpg",
             smallCover: "img/portfolio/zombies.png",
             url: "/zombies",
+            gitHubLink: "https://github.com/paigen11/frontend-project",
             desc: "Leaflet, Javascript, HTML, CSS "
         },
         {
@@ -62,6 +66,7 @@ portfolio.controller('portfolioController', ['$scope', '$timeout', function($sco
             cover: "img/portfolio/shoes-bg.jpg",
             smallCover: "img/portfolio/shoes.png",
             url: "/fresh-kicks",
+            gitHubLink: "https://github.com/PirieD704/nodeEcommerce",
             desc: "AngularJS, Express, NodeJS, MongoDB"
         },
         {
@@ -70,6 +75,7 @@ portfolio.controller('portfolioController', ['$scope', '$timeout', function($sco
             cover: "img/portfolio/heli-bg.jpg",
             smallCover: "img/me_on_mtn.jpg",
             url: "https://github.com/PirieD704/pygame_first",
+            gitHubLink: "https://github.com/PirieD704/pygame_first",
             desc: "Python, PyGame"
         },
         {
@@ -78,6 +84,7 @@ portfolio.controller('portfolioController', ['$scope', '$timeout', function($sco
             cover: "img/portfolio/tictactoe-bg.jpg",
             smallCover: "img/portfolio/tictactoe-game.png",
             url: "/ticTacToe",
+            gitHubLink: "https://github.com/PirieD704/ticTacToe",
             desc: "Javascript, HTML, CSS "
         },
         {
@@ -86,6 +93,7 @@ portfolio.controller('portfolioController', ['$scope', '$timeout', function($sco
             cover: "img/portfolio/hollywood-sign.jpg",
             smallCover: "img/portfolio/movie-app.png",
             url: "/movie-app",
+            gitHubLink: "https://github.com/PirieD704/movie-app",
             desc: "AngularJS, HTML, CSS"
         },
         {
@@ -94,6 +102,7 @@ portfolio.controller('portfolioController', ['$scope', '$timeout', function($sco
             cover: "img/portfolio/social_site_bg.jpg",
             smallCover: "img/portfolio/bawk.png",
             url: "http://www.davidapirie.com:5000",
+            gitHubLink: "https://github.com/jttwnsnd/bawk",
             desc: "Python, Linux, MySQL, Javascript, CSS"
         }
     ]

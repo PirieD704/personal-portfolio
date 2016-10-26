@@ -70,13 +70,13 @@ portfolio.controller('portfolioController', ['$scope', '$timeout', function($sco
             desc: "AngularJS, Express, NodeJS, MongoDB"
         },
         {
-            projectName: "Python Game",
-            imageSrc: "img/me_on_mtn.jpg",
-            cover: "img/portfolio/heli-bg.jpg",
-            smallCover: "img/me_on_mtn.jpg",
-            url: "https://github.com/PirieD704/pygame_first",
-            gitHubLink: "https://github.com/PirieD704/pygame_first",
-            desc: "Python, PyGame"
+            projectName: "Janus: For Notes",
+            imageSrc: "img/portfolio/janus.png",
+            cover: "img/portfolio/organized.jpg",
+            smallCover: "img/portfolio/janus.png",
+            url: "janus.davidapirie.com",
+            gitHubLink: "https://github.com/paigen11/back-end",
+            desc: "Python, Javascript, MySQL, AngularJS"
         },
         {
             projectName: "Tic Tac Toe",

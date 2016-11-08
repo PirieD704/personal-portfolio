@@ -34,13 +34,13 @@ portfolio.controller('portfolioController', ['$scope', '$timeout', function($sco
             desc: "Javascript, HTML, CSS"
         },
         {
-            projectName: "DigitalCrafts Graduate",
-            imageSrc: "img/portfolio/dc-logo.png",
-            cover: "img/portfolio/dc-students.jpg",
-            smallCover: "img/portfolio/dc-logo.png",
+            projectName: "Multiplayer Arena Game",
+            imageSrc: "img/portfolio/space_balls.png",
+            cover: "img/portfolio/space_balls_bgrd.jpg",
+            smallCover: "img/portfolio/space_balls.png",
             url: "http://www.digitalcrafts.com/",
-            gitHubLink: "https://github.com/PirieD704/personal-portfolio",
-            desc: ""
+            gitHubLink: "https://github.com/PirieD704/final_project",
+            desc: "SocketIO, Javascript, Angular, NodeJS, PhaserJS"
         },
         {
             projectName: "Pictionary Chat Room",

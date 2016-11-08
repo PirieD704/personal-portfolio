@@ -38,7 +38,7 @@ portfolio.controller('portfolioController', ['$scope', '$timeout', function($sco
             imageSrc: "img/portfolio/space_balls.png",
             cover: "img/portfolio/space_balls_bgrd.jpg",
             smallCover: "img/portfolio/space_balls.png",
-            url: "http://www.digitalcrafts.com/",
+            url: "/space_balls",
             gitHubLink: "https://github.com/PirieD704/final_project",
             desc: "SocketIO, Javascript, Angular, NodeJS, PhaserJS"
         },

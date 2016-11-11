@@ -74,7 +74,7 @@ portfolio.controller('portfolioController', ['$scope', '$timeout', function($sco
             imageSrc: "img/portfolio/janus.png",
             cover: "img/portfolio/organized.jpg",
             smallCover: "img/portfolio/janus.png",
-            url: "janus.davidapirie.com",
+            url: "http://janus.davidapirie.com",
             gitHubLink: "https://github.com/paigen11/back-end",
             desc: "Python, Javascript, MySQL, AngularJS"
         },

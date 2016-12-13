@@ -6,118 +6,27 @@
 	<meta charset="UTF-8">
 	<title>David Pirie's Portfolio</title>
 
-<!-- include bootstrap -->
+	<!-- include bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
-
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
 
 	<link rel="stylesheet" type="text/css" href="public/stylesheets/styles.css">
 
-	<link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
+	<!-- Angular Material requires Angular.js Libraries -->
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+
+	<!-- Angular Material Library -->
+	<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
 
 </head>
 <body ng-controller="portfolioController">
 
-<!-- 	<div class="container-fluid"> -->
-		<div class="row main-screen">
-<!-- 			<video poster="img/funkyBackground.jpg" id="bgvid" loop playsinline autoplay muted>
-				<source src="img/timelapse.mp4" type="video/mp4">
-			</video> -->
-<!-- 			<div class="title-name">
-				David Pirie
-			</div>
-			<div class="title-occupation">
-				Web Developer
-			</div> -->
-			<canvas id="the-canvas" height="1100px" width="1440px">
-			</canvas>
-		</div>
-		<div class="navbar">
-			<div class="nav-text">
-				<ul>
-					<li class="fade-text"><a>HOME</a></li>
-					<li class="fade-text"><a>ABOUT</a></li>
-					<li class="fade-text"><a>PORTFOLIO</a></li>
-					<li class="fade-text"><a>RESUME</a></li>
-				</ul>
-			</div>
-		</div>
+<div class="greeting">Hi</div>
 
-		<div class="about-section-wrapper">
-			<div class="about-section">
-				<div class="">A little about me</div>
-				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>			
-			</div>
-		</div>
-		<div class="controls">
-  			<label>FILTER:</label>
-  
-  			<button class="filter" data-filter="all">FULL STACK</button>
-  			<button class="filter" data-filter=".category-1">FRONT END</button>
-  			<button class="filter" data-filter=".category-2">BACK END</button>
-  		</div>
-  		<div id="mix-wrapper">
-	  		<div id="container" class="container">
-	  			<div class="mix category-1 wow slideInLeft" data-wow-offset="20" data-myorder="1"><img src="dev-logos/AngularJS.png"></div>
-	  			<div class="mix category-2 wow bounceInUp" data-wow-offset="20" data-myorder="2"><img src="dev-logos/apache.png"></div>
-	  			<div class="mix category-1 wow bounceInDown" data-wow-offset="20" data-myorder="3"><img src="dev-logos/bootstrap.png"></div>
-	  			<div class="mix category-1 wow bounceInUp" data-wow-offset="20" data-myorder="4"><img src="dev-logos/CSS3.png"></div>
-	  			<div class="mix category-2 wow bounceInDown" data-wow-offset="20" data-myorder="5"><img src="dev-logos/express_js.png"></div>
-	  			<div class="mix category-2 wow slideInRight" data-wow-offset="20" data-myorder="6"><img src="dev-logos/github.png"></div>
-	  			<div class="mix category-1 wow slideInLeft" data-wow-offset="20" data-myorder="7"><img src="dev-logos/HTML5.png"></div>
-	  			<div class="mix category-1 wow bounceInDown" data-wow-offset="20" data-myorder="8"><img src="dev-logos/javascript.png"></div>
-	  			<div class="mix category-1 wow bounceInUp" data-wow-offset="20" data-myorder="9"><img src="dev-logos/jQuery.png"></div>
-	  			<div class="mix category-2 wow bounceInDown" data-wow-offset="20" data-myorder="10"><img src="dev-logos/Linux.png"></div>
-	  			<div class="mix category-2 wow bounceInUp" data-wow-offset="20" data-myorder="11"><img src="dev-logos/mongodB.png"></div>
-	  			<div class="mix category-2 wow slideInRight" data-wow-offset="20" data-myorder="12"><img src="dev-logos/mysql.png"></div>
-	  			<div class="mix category-2 wow slideInLeft" data-wow-offset="20" data-myorder="13"><img src="dev-logos/node.png"></div>
-	  			<div class="mix category-2 wow bounceInUp" data-wow-offset="20" data-myorder="14"><img src="dev-logos/python-logo-glassy2.png"></div>
-	  			<div class="mix category-1 wow bounceInDown" data-wow-offset="20" data-myorder="15"><img src="dev-logos/sass.png"></div>
-	  			<div class="mix category-1 wow bounceInUp" data-wow-offset="20" data-myorder="16"><img src="dev-logos/sketch.png"></div>
-	  			<div class="mix category-2 wow slideInRight" data-wow-offset="20" data-myorder="17"><img src="dev-logos/ionic.png"></div>
-	  		</div>
-  		</div>
-  		<div class="projects-wrapper">
-			<span class="projects-title">My Work</span>
-		</div>
-<!-- 	</div> -->
-
-	<!-- Includ jquery because bootstrap needs it -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-
-	<!-- Include bootstrap.js  -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-	<!-- Include angular. duh -->
-<!-- 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
- -->
-	<!-- our angular animate module -->
-<!-- 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
- -->
-	<!-- Include the routes module so we can use ng-view -->
-<!-- 	<script src="https://code.angularjs.org/1.5.8/angular-route.min.js"></script>
- -->
-	<!-- Included cookies module -->
-<!-- 	<script src="https://code.angularjs.org/1.5.8/angular-cookies.min.js"></script>
- -->
-<!-- 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.min.js"></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-aria.min.js"></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-messages.min.js"></script>
- -->
-	<!-- our js sheet -->
-<!-- 	<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script> -->
- 	<script src="js/wow.js"></script>
-    <script>
-    	new WOW().init();
-    </script>
-	<script src="js/mixItUp.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 	
 </body>

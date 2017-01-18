@@ -6,12 +6,27 @@
 	<meta charset="UTF-8">
 	<title>David Pirie's Portfolio</title>
 
+	<!-- enable bootstrap mobile options -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> -->
+
+	<!-- JQuery 2.2.4 -->
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
 	<!-- include bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
 	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
 
 	<link rel="stylesheet" type="text/css" href="public/stylesheets/styles.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!-- google font cdn -->
+	<link href="https://fonts.googleapis.com/css?family=Bevan|Cabin+Sketch|Convergence|Just+Another+Hand|Kanit|Special+Elite" rel="stylesheet">
 
 	<!-- Angular Material requires Angular.js Libraries -->
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
@@ -22,11 +37,42 @@
 	<!-- Angular Material Library -->
 	<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
 
+	<!-- css animate needed for wow.js -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+	<!-- wow.js library -->
+	<script type="text/javascript" src="js/wow.js"></script>
+
+	<!-- this initializes the wow.js feature -->
+	<script> new WOW().init();</script>
+
 </head>
 <body ng-controller="portfolioController">
-
-<div class="greeting">Hi</div>
-
+<div class="greeting">
+	<div class="sayHello wow fadeIn" data-wow-duration="1s">HI</div>
+	<div class="nameSpace wow fadeIn" data-wow-duration="1s">I'M DAVID</div>
+	<div class="declaration wow fadeIn" data-wow-duration="1s" data-wow-delay="1.5s">I'M A BUILDER</div>
+</div>
+<div class="round_menu_wrapper hidden-xs hidden-sm">
+	<input type="checkbox" id="menu_opener_id_desktop" class="menu_opener_desktop">
+		<label for="menu_opener_id_desktop" class="menu_opener_label_desktop"></label>
+		<div class="barre_hamburger_desktop"></div>
+		<a href="#" class="link_one_desktop link_general_desktop glyphicon glyphicon-home"></a>
+		<a href="#" class="link_two_desktop link_general_desktop glyphicon glyphicon-briefcase"></a>
+		<a href="#" class="link_three_desktop link_general_desktop glyphicon glyphicon-phone"></a>
+		<a href="#" class="link_four_desktop link_general_desktop glyphicon glyphicon-user"></a>
+	</input>
+</div>
+<div class="round_menu_wrapper hidden-md hidden-lg">
+	<input type="checkbox" id="menu_opener_id" class="menu_opener">
+		<label for="menu_opener_id" class="menu_opener_label"></label>
+		<div class="barre_hamburger"></div>
+		<a href="#" class="link_one link_general glyphicon glyphicon-home"></a>
+		<a href="#" class="link_two link_general glyphicon glyphicon-briefcase"></a>
+		<a href="#" class="link_three link_general glyphicon glyphicon-phone"></a>
+		<a href="#" class="link_four link_general glyphicon glyphicon-user"></a>
+	</input>
+</div>
 	<script type="text/javascript" src="js/script.js"></script>
 	
 </body>

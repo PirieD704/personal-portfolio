@@ -55,8 +55,8 @@ body .menu_opener_label {
   display: block;
   border-radius: 50%;
   position: absolute;
-  top: 1400px;
-  left: 415px;
+  top: 600px;
+  left: 200px;
   z-index: 10;
 }
 /* line 62, ../../compass/sass/styles.sass */
@@ -88,8 +88,8 @@ body .barre_hamburger {
   width: 50px;
   height: 10px;
   position: absolute;
-  top: 1470px;
-  left: 465px;
+  top: 670px;
+  left: 250px;
   background: #000;
   z-index: 20;
   -webkit-transition: all 0.4s ease;
@@ -106,8 +106,8 @@ body .link_general {
   display: block;
   border-radius: 50%;
   position: absolute;
-  top: 1425px;
-  left: 440px;
+  top: 625px;
+  left: 225px;
   background: #f84a20;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;

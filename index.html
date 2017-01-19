@@ -7,7 +7,7 @@
 	<title>David Pirie's Portfolio</title>
 
 	<!-- enable bootstrap mobile options -->
-	<meta name="viewport" content="width=device-width, initial-scale=.7, maximum-scale=1, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=.6, maximum-scale=1">
 
 	<!-- JQuery 2.2.4 -->
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
@@ -44,7 +44,14 @@
 	<script type="text/javascript" src="js/wow.js"></script>
 
 	<!-- this initializes the wow.js feature -->
-	<script> new WOW().init();</script>
+	<script>new WOW().init();</script>
+	<script>
+		$('li').click(function(){
+			$(this).addClass('active')
+				.siblings()
+				.removeClass('active');
+		});
+	</script>
 
 </head>
 <body ng-controller="portfolioController">
@@ -52,7 +59,7 @@
   <ul class="nav">
     <li class="active">
       <a href="#">
-        <span class="icon-home"></span>
+        <span class="glyphicon glyphicon-home"></span>
         <span class="text">home</span>
       </a>
     </li>

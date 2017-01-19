@@ -48,12 +48,60 @@
 
 </head>
 <body ng-controller="portfolioController">
-<div class="greeting">
-	<div class="sayHello wow fadeIn" data-wow-duration="1s">HI</div>
-	<div class="nameSpace wow fadeIn" data-wow-duration="1s">I'M DAVID</div>
-	<div class="declaration wow fadeIn" data-wow-duration="1s" data-wow-delay="1.2s">I'M A BUILDER</div>
+<div class="nav-container">
+  <ul class="nav">
+    <li class="active">
+      <a href="#">
+        <span class="icon-home"></span>
+        <span class="text">home</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <span class="icon-user"></span>
+        <span class="text">about</span>
+      </a>
+      </li>
+    <li>
+      <a href="#">
+        <span class="icon-headphones"></span>
+        <span class="text">Audio</span>
+      </a>
+      </li>
+    <li>
+      <a href="#">
+        <span class="icon-picture"></span>
+        <span class="text">Portfolio</span>    
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <span class="icon-facetime-video"></span><span class="text">video</span>
+      </a>
+    </li>
+  </ul>
 </div>
-<div class="round_menu_wrapper hidden-xs hidden-sm wow fadeIn" data-wow-duration="1s" data-wow-delay="2.4s">
+<div class=container>
+	<div class="greeting">
+		<div class="wrapped">
+			<div class="sayHello wow fadeIn col-xs-12" data-wow-duration="1s">HI</div>
+			<div class="nameSpace wow fadeIn col-xs-12" data-wow-duration="1s">I'M DAVID</div>
+			<div class="declaration wow fadeIn col-xs-12" data-wow-duration="1s" data-wow-delay="1.2s">I'M A BUILDER</div>
+		</div>
+	</div>
+	<div class="quote-wrapper">
+		<div class="quote-header col-xs-12">
+			Quote of the Day
+		</div>
+		<div class="quote-section col-xs-12">
+			Man cannot remake himself without suffering for he is both the marble and the sculptor.
+		</div>
+		<div class="quote-author-section col-xs-12">
+			- Alexis Carrel
+		</div>
+	</div>
+</div>
+<!-- <div class="round_menu_wrapper hidden-xs hidden-sm wow fadeIn" data-wow-duration="1s" data-wow-delay="2.4s">
 	<input type="checkbox" id="menu_opener_id_desktop" class="menu_opener_desktop">
 		<label for="menu_opener_id_desktop" class="menu_opener_label_desktop"></label>
 		<div class="barre_hamburger_desktop"></div>
@@ -72,7 +120,7 @@
 		<a href="#" class="link_three link_general glyphicon glyphicon-phone"></a>
 		<a href="#" class="link_four link_general glyphicon glyphicon-user"></a>
 	</input>
-</div>
+</div> -->
 	<script type="text/javascript" src="js/script.js"></script>
 	
 </body>

@@ -10,8 +10,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=.7, maximum-scale=1, user-scalable=no">
 
 	<!-- JQuery 2.2.4 -->
-	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script
 	<!-- include bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -29,10 +28,13 @@
 	<link href="https://fonts.googleapis.com/css?family=Bevan|Cabin+Sketch|Convergence|Just+Another+Hand|Kanit|Special+Elite" rel="stylesheet">
 
 	<!-- Angular Material requires Angular.js Libraries -->
-	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+
+	<!-- Load up the angular routes dependency -->
+	<script type="text/javascript" src="js/vendor/routes.js"></script>
 
 	<!-- Angular Material Library -->
 	<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
@@ -41,87 +43,17 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
 	<!-- wow.js library -->
-	<script type="text/javascript" src="js/wow.js"></script>
+	<script type="text/javascript" src="js/vendor/wow.js"></script>
+
 
 	<!-- this initializes the wow.js feature -->
 	<script> new WOW().init();</script>
 
 </head>
-<body ng-controller="portfolioController">
-<div class="nav-container">
-  <ul class="nav">
-    <li class="active">
-      <a href="#">
-        <span class="icon-home"></span>
-        <span class="text">home</span>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <span class="icon-user"></span>
-        <span class="text">about</span>
-      </a>
-      </li>
-    <li>
-      <a href="#">
-        <span class="icon-headphones"></span>
-        <span class="text">Audio</span>
-      </a>
-      </li>
-    <li>
-      <a href="#">
-        <span class="icon-picture"></span>
-        <span class="text">Portfolio</span>    
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <span class="icon-facetime-video"></span><span class="text">video</span>
-      </a>
-    </li>
-  </ul>
-</div>
-<div class=container>
-	<div class="greeting">
-		<div class="wrapped">
-			<div class="sayHello wow fadeIn col-xs-12" data-wow-duration="1s">HI</div>
-			<div class="nameSpace wow fadeIn col-xs-12" data-wow-duration="1s">I'M DAVID</div>
-			<div class="declaration wow fadeIn col-xs-12" data-wow-duration="1s" data-wow-delay="1.2s">I'M A BUILDER</div>
-		</div>
-	</div>
-	<div class="quote-wrapper">
-		<div class="quote-header col-xs-12">
-			Quote of the Day
-		</div>
-		<div class="quote-section col-xs-12">
-			Man cannot remake himself without suffering for he is both the marble and the sculptor.
-		</div>
-		<div class="quote-author-section col-xs-12">
-			- Alexis Carrel
-		</div>
-	</div>
-</div>
-<!-- <div class="round_menu_wrapper hidden-xs hidden-sm wow fadeIn" data-wow-duration="1s" data-wow-delay="2.4s">
-	<input type="checkbox" id="menu_opener_id_desktop" class="menu_opener_desktop">
-		<label for="menu_opener_id_desktop" class="menu_opener_label_desktop"></label>
-		<div class="barre_hamburger_desktop"></div>
-		<a href="#" class="link_one_desktop link_general_desktop glyphicon glyphicon-home"></a>
-		<a href="#" class="link_two_desktop link_general_desktop glyphicon glyphicon-briefcase"></a>
-		<a href="#" class="link_three_desktop link_general_desktop glyphicon glyphicon-phone"></a>
-		<a href="#" class="link_four_desktop link_general_desktop glyphicon glyphicon-user"></a>
-	</input>
-</div>
-<div class="round_menu_wrapper hidden-md hidden-lg">
-	<input type="checkbox" id="menu_opener_id" class="menu_opener">
-		<label for="menu_opener_id" class="menu_opener_label"></label>
-		<div class="barre_hamburger"></div>
-		<a href="#" class="link_one link_general glyphicon glyphicon-home"></a>
-		<a href="#" class="link_two link_general glyphicon glyphicon-briefcase"></a>
-		<a href="#" class="link_three link_general glyphicon glyphicon-phone"></a>
-		<a href="#" class="link_four link_general glyphicon glyphicon-user"></a>
-	</input>
-</div> -->
-	<script type="text/javascript" src="js/script.js"></script>
+<body>
+	<div id="views" ng-view></div>
+	<script type="text/javascript" src="js/controllers/script.js"></script>
+	<script type="text/javascript" src="js/routes/routes.js"></script>
 	
 </body>
 </html>

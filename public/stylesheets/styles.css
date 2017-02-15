@@ -57,4 +57,5 @@ body .nav-container .nav-link {
 /* line 28, ../../compass/sass/styles.sass */
 body .nav-container .nav-link:hover {
   background-color: #fe4319;
+  opacity: 0.8;
 }

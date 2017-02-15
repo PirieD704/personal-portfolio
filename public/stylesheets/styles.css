@@ -41,3 +41,12 @@ body .quote-wrapper .quote-author-section {
   font-size: 20px;
   text-align: right;
 }
+
+/* line 24, ../../compass/sass/styles.sass */
+body .nav-container {
+  font-size: 24px;
+}
+/* line 26, ../../compass/sass/styles.sass */
+body .nav-container .nav-link {
+  color: #eee;
+}

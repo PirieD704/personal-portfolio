@@ -9,20 +9,18 @@
 	<!-- enable bootstrap mobile options -->
 	<meta name="viewport" content="width=device-width, initial-scale=.7, maximum-scale=1, user-scalable=no">
 
-	<!-- JQuery 2.2.4 -->
-	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script
-	<!-- include bootstrap -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<!-- include bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+	<!-- JQuery, then Tether, then Bootstrap -->
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
 	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
 
 	<link rel="stylesheet" type="text/css" href="public/stylesheets/styles.css">
-
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 	<!-- google font cdn -->
 	<link href="https://fonts.googleapis.com/css?family=Bevan|Cabin+Sketch|Convergence|Just+Another+Hand|Kanit|Special+Elite" rel="stylesheet">
@@ -42,6 +40,9 @@
 	<!-- css animate needed for wow.js -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
+	<!-- breakpoints.js -->
+	<script  type="text/javascript" src="http://xoxco.com/projects/code/breakpoints/breakpoints.js"></script>
+
 	<!-- wow.js library -->
 	<script type="text/javascript" src="js/vendor/wow.js"></script>
 
@@ -51,6 +52,22 @@
 
 </head>
 <body>
+	<div class="container nav-container">
+		<ul class="nav justify-content-center">
+		  <li class="nav-item">
+		    <a class="nav-link" href="#">Home</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link" href="#">About</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link" href="#">Projects</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link" href="#">Contact</a>
+		  </li>
+		</ul>
+	</div>
 	<div id="views" ng-view></div>
 	<script type="text/javascript" src="js/controllers/script.js"></script>
 	<script type="text/javascript" src="js/routes/routes.js"></script>

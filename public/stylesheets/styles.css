@@ -18,24 +18,28 @@ body .greeting .wrapped {
   padding-bottom: 20%;
 }
 /* line 19, ../../compass/sass/views/_main.sass */
+body .greeting .declaration {
+  font-size: 26px;
+}
+/* line 21, ../../compass/sass/views/_main.sass */
 body .quote-wrapper {
   margin: auto;
   width: 95%;
   color: #ffffff;
 }
-/* line 23, ../../compass/sass/views/_main.sass */
+/* line 25, ../../compass/sass/views/_main.sass */
 body .quote-wrapper .quote-header {
   text-align: left;
   font-family: "Convergence", cursive;
   font-size: 25px;
 }
-/* line 27, ../../compass/sass/views/_main.sass */
+/* line 29, ../../compass/sass/views/_main.sass */
 body .quote-wrapper .quote-section {
   font-family: "Special Elite", sans-serif;
   font-size: 20px;
   text-align: left;
 }
-/* line 31, ../../compass/sass/views/_main.sass */
+/* line 33, ../../compass/sass/views/_main.sass */
 body .quote-wrapper .quote-author-section {
   font-family: "Special Elite", sans-serif;
   font-size: 20px;
@@ -49,4 +53,8 @@ body .nav-container {
 /* line 26, ../../compass/sass/styles.sass */
 body .nav-container .nav-link {
   color: #eee;
+}
+/* line 28, ../../compass/sass/styles.sass */
+body .nav-container .nav-link:hover {
+  background-color: #fe4319;
 }

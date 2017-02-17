@@ -134,6 +134,22 @@
     border-left: none;
   }
 }
+/* line 5, ../../compass/sass/views/_projects.sass */
+.projects-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #353535;
+}
+/* line 13, ../../compass/sass/views/_projects.sass */
+.projects-container .project-title {
+  font-family: "Convergence", cursive;
+  font-size: 32px;
+}
+
 /* line 23, ../../compass/sass/styles.sass */
 body {
   background-color: #ffffff;

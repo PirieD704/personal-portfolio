@@ -143,11 +143,52 @@
   justify-content: center;
   align-items: center;
   color: #353535;
-}
-/* line 13, ../../compass/sass/views/_projects.sass */
-.projects-container .project-title {
   font-family: "Convergence", cursive;
+}
+/* line 14, ../../compass/sass/views/_projects.sass */
+.projects-container .project-title {
   font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 19, ../../compass/sass/views/_projects.sass */
+.projects-container .space-balls {
+  background: #d9d9d9 url("..img/porfolio/space_balls_bgrd.jpg") no-repeat cover;
+}
+/* line 21, ../../compass/sass/views/_projects.sass */
+.projects-container .janus {
+  background: #d9d9d9 url("..img/porfolio/organized.jpg") no-repeat cover;
+}
+/* line 23, ../../compass/sass/views/_projects.sass */
+.projects-container .zombiez {
+  background: #d9d9d9 url("..img/porfolio/zombies2.jpg") no-repeat cover;
+}
+/* line 25, ../../compass/sass/views/_projects.sass */
+.projects-container .fresh-kicks {
+  background: #d9d9d9 url("..img/porfolio/shoes-bg.jpg") no-repeat cover;
+}
+/* line 27, ../../compass/sass/views/_projects.sass */
+.projects-container .project-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* line 33, ../../compass/sass/views/_projects.sass */
+.projects-container .project-section .proj-item {
+  width: 50%;
+  height: 150px;
+}
+/* line 36, ../../compass/sass/views/_projects.sass */
+.projects-container .project-section .proj-item .links-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+/* line 39, ../../compass/sass/views/_projects.sass */
+.projects-container .project-section .proj-item .links-wrapper .proj-link {
+  padding: 20px;
 }
 
 /* line 23, ../../compass/sass/styles.sass */

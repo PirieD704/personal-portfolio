@@ -10,9 +10,33 @@
 	justify-content: center
 	align-items: center
 	color: $theme-black
+	font-family: $theme-font
 	.project-title
-		font-family: $theme-font
 		font-size: 32px
-		.project-section
-			.proj-item
+		display: flex
+		justify-content: center
+		align-items: center
+	.space-balls
+		background: $theme-grey url('..img/porfolio/space_balls_bgrd.jpg') no-repeat cover
+	.janus
+		background: $theme-grey url('..img/porfolio/organized.jpg') no-repeat cover
+	.zombiez
+		background: $theme-grey url('..img/porfolio/zombies2.jpg') no-repeat cover
+	.fresh-kicks
+		background: $theme-grey url('..img/porfolio/shoes-bg.jpg') no-repeat cover
+	.project-section
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		align-items: center
+		text-align: center
+		.proj-item
+			width: 50%
+			height: 150px
+			.links-wrapper
+				display: flex
+				justify-content: space-around
+				.proj-link
+					padding: 20px
+
 				

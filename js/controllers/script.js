@@ -4,15 +4,15 @@ angular.module("portfolio", ['ngRoute'])
 	$scope.test = "does this work?";
 
 	$scope.portfolio = [
-        {
-            projectName: "BlackJack",
-            imageSrc: "img/portfolio/blackjack.png",
-            cover: "img/portfolio/blackjack2.JPG",
-            smallCover: "img/portfolio/blackjack.png",
-            url: "/blackjack",
-            gitHubLink: "https://github.com/PirieD704/blackJack",
-            desc: "Javascript, HTML, CSS"
-        },
+        // {
+        //     projectName: "BlackJack",
+        //     imageSrc: "img/portfolio/blackjack.png",
+        //     cover: "img/portfolio/blackjack2.JPG",
+        //     smallCover: "img/portfolio/blackjack.png",
+        //     url: "/blackjack",
+        //     gitHubLink: "https://github.com/PirieD704/blackJack",
+        //     desc: "Javascript, HTML, CSS"
+        // },
         {
             projectName: "Multiplayer Arena Game",
             imageSrc: "img/portfolio/space_balls.png",
@@ -22,15 +22,15 @@ angular.module("portfolio", ['ngRoute'])
             gitHubLink: "https://github.com/PirieD704/final_project",
             desc: "SocketIO, Javascript, Angular, NodeJS, PhaserJS"
         },
-        {
-            projectName: "Pictionary Chat Room",
-            imageSrc: "img/portfolio/chat_room.png",
-            cover: "img/portfolio/chat-room2.jpg",
-            smallCover: "img/portfolio/chat_room.png",
-            url: "/chat-room",
-            gitHubLink: "https://github.com/PirieD704/chat-room",
-            desc: "Socket IO, AngularJS, Javascript"
-        },
+        // {
+        //     projectName: "Pictionary Chat Room",
+        //     imageSrc: "img/portfolio/chat_room.png",
+        //     cover: "img/portfolio/chat-room2.jpg",
+        //     smallCover: "img/portfolio/chat_room.png",
+        //     url: "/chat-room",
+        //     gitHubLink: "https://github.com/PirieD704/chat-room",
+        //     desc: "Socket IO, AngularJS, Javascript"
+        // },
         {
             projectName: "Zombiez: The Game",
             imageSrc: "img/portfolio/zombies.png",
@@ -57,34 +57,35 @@ angular.module("portfolio", ['ngRoute'])
             url: "http://janus.davidapirie.com",
             gitHubLink: "https://github.com/paigen11/back-end",
             desc: "Python, Javascript, MySQL, AngularJS"
-        },
-        {
-            projectName: "Tic Tac Toe",
-            imageSrc: "img/portfolio/tictactoe-game.png",
-            cover: "img/portfolio/tictactoe-bg.jpg",
-            smallCover: "img/portfolio/tictactoe-game.png",
-            url: "/ticTacToe",
-            gitHubLink: "https://github.com/PirieD704/ticTacToe",
-            desc: "Javascript, HTML, CSS "
-        },
-        {
-            projectName: "Movie App",
-            imageSrc: "img/portfolio/movie-app.png",
-            cover: "img/portfolio/hollywood-sign.jpg",
-            smallCover: "img/portfolio/movie-app.png",
-            url: "/movie-app",
-            gitHubLink: "https://github.com/PirieD704/movie-app",
-            desc: "AngularJS, HTML, CSS"
-        },
-        {
-            projectName: "Social Site",
-            imageSrc: "img/portfolio/bawk.png",
-            cover: "img/portfolio/social_site_bg.jpg",
-            smallCover: "img/portfolio/bawk.png",
-            url: "http://www.davidapirie.com:5000",
-            gitHubLink: "https://github.com/jttwnsnd/bawk",
-            desc: "Python, Linux, MySQL, Javascript, CSS"
         }
+        // },
+        // {
+        //     projectName: "Tic Tac Toe",
+        //     imageSrc: "img/portfolio/tictactoe-game.png",
+        //     cover: "img/portfolio/tictactoe-bg.jpg",
+        //     smallCover: "img/portfolio/tictactoe-game.png",
+        //     url: "/ticTacToe",
+        //     gitHubLink: "https://github.com/PirieD704/ticTacToe",
+        //     desc: "Javascript, HTML, CSS "
+        // },
+        // {
+        //     projectName: "Movie App",
+        //     imageSrc: "img/portfolio/movie-app.png",
+        //     cover: "img/portfolio/hollywood-sign.jpg",
+        //     smallCover: "img/portfolio/movie-app.png",
+        //     url: "/movie-app",
+        //     gitHubLink: "https://github.com/PirieD704/movie-app",
+        //     desc: "AngularJS, HTML, CSS"
+        // },
+        // {
+        //     projectName: "Social Site",
+        //     imageSrc: "img/portfolio/bawk.png",
+        //     cover: "img/portfolio/social_site_bg.jpg",
+        //     smallCover: "img/portfolio/bawk.png",
+        //     url: "http://www.davidapirie.com:5000",
+        //     gitHubLink: "https://github.com/jttwnsnd/bawk",
+        //     desc: "Python, Linux, MySQL, Javascript, CSS"
+        // }
     ]
 
 })

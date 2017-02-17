@@ -3,7 +3,7 @@
 
 // // CONFIGS
 // // -------------------------------
-// @import "configs/variables"
+@import "configs/variables"
 
 // // LAYOUT
 // // -------------------------------
@@ -21,15 +21,17 @@
 // @import "views/account"
 
 body
-	background-color: #444444
+	background-color: $theme-white
 	.nav-container
 		font-size: 24px
+		background-color: $theme-grey
 		.nav-link
-			color: #eee
+			color: $theme-black
 			transition: all .25s ease-in-out
 		.nav-link:hover
-			background-color: #fe4319
-			opacity: .8
+			background-color: $theme-blue
+			opacity: .9
+			color: $theme-white
 	
 
 

@@ -16,14 +16,20 @@
 		display: flex
 		justify-content: center
 		align-items: center
+	.project-section
+		width: 70%
 	.space-balls
-		background: $theme-grey url('..img/porfolio/space_balls_bgrd.jpg') no-repeat cover
+		background: $theme-grey url('../../img/portfolio/space_balls_bgrd.jpg') no-repeat center fixed
+		background-size: cover
 	.janus
-		background: $theme-grey url('..img/porfolio/organized.jpg') no-repeat cover
+		background: $theme-grey url('../../img/portfolio/organized.jpg') no-repeat center fixed
+		background-size: cover
 	.zombiez
-		background: $theme-grey url('..img/porfolio/zombies2.jpg') no-repeat cover
+		background: $theme-grey url('../../img/portfolio/zombies2.jpg') no-repeat center fixed
+		background-size: cover
 	.fresh-kicks
-		background: $theme-grey url('..img/porfolio/shoes-bg.jpg') no-repeat cover
+		background: $theme-grey url('../../img/portfolio/shoes-bg.jpg') no-repeat center fixed
+		background-size: cover
 	.project-section
 		display: flex
 		flex-wrap: wrap
@@ -31,8 +37,14 @@
 		align-items: center
 		text-align: center
 		.proj-item
-			width: 50%
-			height: 150px
+			width: 300px
+			height: 300px
+			display: flex
+			flex-direction: column
+			justify-content: flex-end
+			.item-title
+				font-size: 28px
+				color: $theme-white
 			.links-wrapper
 				display: flex
 				justify-content: space-around

@@ -11,13 +11,18 @@
 	align-items: center
 	color: $theme-black
 	font-family: $theme-font
-	.project-title
-		font-size: 32px
-		display: flex
-		justify-content: center
-		align-items: center
+	// .project-title
+	// 	font-size: 32px
+	// 	display: flex
+	// 	justify-content: center
+	// 	align-items: center
+	// 	padding: 20px
 	.project-section
+		display: flex
 		width: 800px
+		border-top: 10px solid $theme-green
+		border-bottom: 10px solid $theme-green
+		padding: 20px 0px
 	.space-balls
 		background: $theme-grey url('../../img/portfolio/space_balls_bgrd.jpg') no-repeat
 		background-size: cover
@@ -37,19 +42,19 @@
 		align-items: center
 		text-align: center
 		.proj-item
-			width: 300px
+			width: 360px
 			height: 300px
 			display: flex
 			flex-direction: column
 			justify-content: flex-end
-			margin: 10px
+			margin: 6px
 			.item-title
 				font-size: 22px
 				background-color: $theme-grey
 				color: $theme-black
 				margin: 10px
-				height: 66px
-				opacity: .9
+				padding: 15px 0px 15px 0px
+				opacity: 1
 				margin-bottom: 50px
 			.links-wrapper
 				display: flex
@@ -58,23 +63,34 @@
 				background-color: $theme-blue
 				font-size: 13px
 				color: $theme-white
+				// have to override default button features from bootstrap
+				.btn
+					background-color: $theme-blue
+					font-size: 13px
+					color: $theme-white
+					border-radius: 0px
+					margin: 0px
+				.btn:focus
+					box-shadow: 0 0 0 0px $theme-blue //to override bootstrap's default box shadow setting on focus
 				a
 					color: $theme-white
-					text-decoration: none
+					text-decoration: none			
 				.proj-link
 					padding: 20px
 				.proj-link:hover
 					background-color: $theme-grey
 					color: $theme-green
+					transition: all 0.25s ease-in-out
 
 @media screen and (max-width: 800px)
 	.projects-container
-		margin-top: 60px
-		.project-title
-			padding: 20px 
+		margin-top: 80px
+		height: 100%
+		// .project-title
+		// 	padding: 20px 
 		.project-section
-			width: 320px				
-
+			width: 400px
+			margin-bottom: 20px				
 
 
 

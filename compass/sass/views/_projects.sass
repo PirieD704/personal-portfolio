@@ -17,18 +17,18 @@
 		justify-content: center
 		align-items: center
 	.project-section
-		width: 70%
+		width: 800px
 	.space-balls
-		background: $theme-grey url('../../img/portfolio/space_balls_bgrd.jpg') no-repeat center fixed
+		background: $theme-grey url('../../img/portfolio/space_balls_bgrd.jpg') no-repeat
 		background-size: cover
 	.janus
-		background: $theme-grey url('../../img/portfolio/organized.jpg') no-repeat center fixed
+		background: $theme-grey url('../../img/portfolio/organized.jpg') no-repeat
 		background-size: cover
 	.zombiez
-		background: $theme-grey url('../../img/portfolio/zombies2.jpg') no-repeat center fixed
+		background: $theme-grey url('../../img/portfolio/zombies2.jpg') no-repeat
 		background-size: cover
 	.fresh-kicks
-		background: $theme-grey url('../../img/portfolio/shoes-bg.jpg') no-repeat center fixed
+		background: $theme-grey url('../../img/portfolio/shoes-bg.jpg') no-repeat
 		background-size: cover
 	.project-section
 		display: flex
@@ -42,13 +42,43 @@
 			display: flex
 			flex-direction: column
 			justify-content: flex-end
+			margin: 10px
 			.item-title
-				font-size: 28px
-				color: $theme-white
+				font-size: 22px
+				background-color: $theme-grey
+				color: $theme-black
+				margin: 10px
+				height: 66px
+				opacity: .9
+				margin-bottom: 50px
 			.links-wrapper
 				display: flex
-				justify-content: space-around
+				justify-content: space-between
+				margin: 10px
+				background-color: $theme-blue
+				font-size: 13px
+				color: $theme-white
+				a
+					color: $theme-white
+					text-decoration: none
 				.proj-link
 					padding: 20px
+				.proj-link:hover
+					background-color: $theme-grey
+					color: $theme-green
 
-				
+@media screen and (max-width: 800px)
+	.projects-container
+		margin-top: 60px
+		.project-title
+			padding: 20px 
+		.project-section
+			width: 320px				
+
+
+
+
+
+
+
+

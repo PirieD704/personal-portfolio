@@ -154,26 +154,26 @@
 }
 /* line 19, ../../compass/sass/views/_projects.sass */
 .projects-container .project-section {
-  width: 70%;
+  width: 800px;
 }
 /* line 21, ../../compass/sass/views/_projects.sass */
 .projects-container .space-balls {
-  background: #d9d9d9 url("../../img/portfolio/space_balls_bgrd.jpg") no-repeat center fixed;
+  background: #d9d9d9 url("../../img/portfolio/space_balls_bgrd.jpg") no-repeat;
   background-size: cover;
 }
 /* line 24, ../../compass/sass/views/_projects.sass */
 .projects-container .janus {
-  background: #d9d9d9 url("../../img/portfolio/organized.jpg") no-repeat center fixed;
+  background: #d9d9d9 url("../../img/portfolio/organized.jpg") no-repeat;
   background-size: cover;
 }
 /* line 27, ../../compass/sass/views/_projects.sass */
 .projects-container .zombiez {
-  background: #d9d9d9 url("../../img/portfolio/zombies2.jpg") no-repeat center fixed;
+  background: #d9d9d9 url("../../img/portfolio/zombies2.jpg") no-repeat;
   background-size: cover;
 }
 /* line 30, ../../compass/sass/views/_projects.sass */
 .projects-container .fresh-kicks {
-  background: #d9d9d9 url("../../img/portfolio/shoes-bg.jpg") no-repeat center fixed;
+  background: #d9d9d9 url("../../img/portfolio/shoes-bg.jpg") no-repeat;
   background-size: cover;
 }
 /* line 33, ../../compass/sass/views/_projects.sass */
@@ -191,22 +191,56 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  margin: 10px;
 }
-/* line 45, ../../compass/sass/views/_projects.sass */
+/* line 46, ../../compass/sass/views/_projects.sass */
 .projects-container .project-section .proj-item .item-title {
-  font-size: 28px;
-  color: #ffffff;
+  font-size: 22px;
+  background-color: #d9d9d9;
+  color: #353535;
+  margin: 10px;
+  height: 66px;
+  opacity: 0.9;
+  margin-bottom: 50px;
 }
-/* line 48, ../../compass/sass/views/_projects.sass */
+/* line 54, ../../compass/sass/views/_projects.sass */
 .projects-container .project-section .proj-item .links-wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 10px;
+  background-color: #284b63;
+  font-size: 13px;
+  color: #ffffff;
 }
-/* line 51, ../../compass/sass/views/_projects.sass */
+/* line 61, ../../compass/sass/views/_projects.sass */
+.projects-container .project-section .proj-item .links-wrapper a {
+  color: #ffffff;
+  text-decoration: none;
+}
+/* line 64, ../../compass/sass/views/_projects.sass */
 .projects-container .project-section .proj-item .links-wrapper .proj-link {
   padding: 20px;
 }
+/* line 66, ../../compass/sass/views/_projects.sass */
+.projects-container .project-section .proj-item .links-wrapper .proj-link:hover {
+  background-color: #d9d9d9;
+  color: #3c6e71;
+}
 
+@media screen and (max-width: 800px) {
+  /* line 71, ../../compass/sass/views/_projects.sass */
+  .projects-container {
+    margin-top: 60px;
+  }
+  /* line 73, ../../compass/sass/views/_projects.sass */
+  .projects-container .project-title {
+    padding: 20px;
+  }
+  /* line 75, ../../compass/sass/views/_projects.sass */
+  .projects-container .project-section {
+    width: 320px;
+  }
+}
 /* line 23, ../../compass/sass/styles.sass */
 body {
   background-color: #ffffff;

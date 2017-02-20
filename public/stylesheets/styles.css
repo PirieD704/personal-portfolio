@@ -292,21 +292,23 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-family: "Convergence", cursive;
+  font-size: 24px;
 }
-/* line 15, ../../compass/sass/views/_contact.sass */
+/* line 17, ../../compass/sass/views/_contact.sass */
 .contact-container a {
   color: #284b63;
 }
-/* line 17, ../../compass/sass/views/_contact.sass */
+/* line 19, ../../compass/sass/views/_contact.sass */
 .contact-container .info-intro {
   padding: 20px;
 }
-/* line 19, ../../compass/sass/views/_contact.sass */
+/* line 21, ../../compass/sass/views/_contact.sass */
 .contact-container .icons-section {
   display: flex;
   font-size: 80px;
 }
-/* line 22, ../../compass/sass/views/_contact.sass */
+/* line 24, ../../compass/sass/views/_contact.sass */
 .contact-container .icons-section i {
   margin: 30px;
 }

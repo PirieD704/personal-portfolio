@@ -20,8 +20,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
-	<link rel="stylesheet" type="text/css" href="public/stylesheets/styles.css">
-
 	<!-- font awesome -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -31,22 +29,11 @@
 	<!-- material icon font -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-	<!-- Angular Material requires Angular.js Libraries -->
-	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-
-	<!-- Load up the angular routes dependency -->
-	<script type="text/javascript" src="js/vendor/routes.js"></script>
-
 	<!-- css animate needed for wow.js -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
-
-	<!-- wow.js library -->
-	<script type="text/javascript" src="js/vendor/wow.js"></script>
-
-
-	<!-- this initializes the wow.js feature -->
-	<script> new WOW().init();</script>
+	<!-- my stylesheet -->
+	<link rel="stylesheet" type="text/css" href="public/stylesheets/styles.css">
 
 </head>
 <body ng-controller="portfolioController as myFolio">
@@ -67,6 +54,19 @@
 		</ul>
 	</div>
 	<div id="views" ng-view></div>
+	<!-- Angular Material requires Angular.js Libraries -->
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+
+	<!-- Load up the angular routes dependency -->
+	<script type="text/javascript" src="js/vendor/routes.js"></script>
+
+	<!-- wow.js library -->
+	<script type="text/javascript" src="js/vendor/wow.js"></script>
+
+
+	<!-- this initializes the wow.js feature -->
+	<script> new WOW().init();</script>
+	
 	<script type="text/javascript" src="js/controllers/script.js"></script>
 	<script type="text/javascript" src="js/routes/routes.js"></script>
 		<script>

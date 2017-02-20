@@ -1,0 +1,77 @@
+// -------------------------------
+// _ABOUT.SASS
+// About View Styles
+// -------------------------------
+.about-container
+	width: 100%
+	height: 100vh
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+	.brief-description
+		font-size: 24px
+		font-family: $theme-font
+		color: $theme-black
+		text-align: center
+		padding-bottom: 100px
+		border-bottom: 10px solid $theme-green
+		.inner-descript
+			width: 65%
+			margin: auto
+	.about-skills-title
+		font-family: $theme-font
+		font-size: 24px
+		padding-top: 100px
+		padding-bottom: 20px
+	.skills-section
+		font-family: $theme-font
+		font-size: 24px
+		display: flex
+		flex-wrap: wrap
+		text-align: center
+		.skill
+			width: 50%
+		.skill-1
+			border-right: 5px solid $theme-green
+		.skill-2
+			border-left: 5px solid $theme-green
+
+@media screen and (max-width: 900px)
+	.about-container
+		width: 100%
+		height: 100vh
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+		padding-top: 80px
+		.brief-description
+			font-size: 24px
+			font-family: $theme-font
+			color: $theme-black
+			text-align: center
+			padding-bottom: 60px
+			border-bottom: 10px solid $theme-green
+			.inner-descript
+				width: 100%
+				margin: none
+		.about-skills-title
+			font-family: $theme-font
+			font-size: 24px
+			padding-top: 60px
+			padding-bottom: 20px
+		.skills-section
+			font-family: $theme-font
+			font-size: 20px
+			display: flex
+			flex-wrap: wrap
+			text-align: center
+			padding-bottom: 60px
+			border-bottom: 10px solid $theme-green
+			.skill
+				width: 50%
+			.skill-1
+				border-right: none
+			.skill-2
+				border-left: none

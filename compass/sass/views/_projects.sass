@@ -1,0 +1,121 @@
+// -------------------------------
+// _ACCOUNT.SCSS
+// Account View Styles
+// -------------------------------
+.projects-container
+	width: 100%
+	height: 100vh
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	color: $theme-black
+	font-family: $theme-font
+	// .project-title
+	// 	font-size: 32px
+	// 	display: flex
+	// 	justify-content: center
+	// 	align-items: center
+	// 	padding: 20px
+	.project-section
+		display: flex
+		width: 800px
+		border-top: 10px solid $theme-green
+		border-bottom: 10px solid $theme-green
+		padding: 20px 0px
+	.space-balls
+		background: $theme-grey url('../../img/portfolio/space_balls_bgrd.jpg') no-repeat
+		background-size: cover
+	.janus
+		background: $theme-grey url('../../img/portfolio/organized.jpg') no-repeat
+		background-size: cover
+	.zombiez
+		background: $theme-grey url('../../img/portfolio/zombies2.jpg') no-repeat
+		background-size: cover
+	.fresh-kicks
+		background: $theme-grey url('../../img/portfolio/shoes-bg.jpg') no-repeat
+		background-size: cover
+	.project-section
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		align-items: center
+		text-align: center
+		.proj-item
+			width: 360px
+			height: 300px
+			display: flex
+			flex-direction: column
+			justify-content: flex-end
+			margin: 6px
+			.item-title-wrap
+				cursor: pointer
+				.item-title
+					font-size: 22px
+					background-color: $theme-grey
+					color: $theme-black
+					margin: 10px
+					padding: 15px 0px 15px 0px
+					opacity: .9
+					margin-bottom: 50px
+					margin-top: 108px				
+			.links-wrapper
+				display: flex
+				justify-content: space-around
+				margin: 10px
+				background-color: $theme-blue
+				font-size: 13px
+				color: $theme-white
+				.modal
+					color: $theme-black
+					font-size: 15px
+					.modal-content
+						border: 0px solid $theme-black
+						border-radius: 0px
+					img
+						width: 280px
+						height: 200px
+					.modal-content-title
+						padding: 20px 20px 0px 20px
+					.modal-content-description
+						padding: 0px 20px 20px
+					.modal-footer
+						button
+							background-color: $theme-blue
+							color: $theme-grey
+							border: 0px solid $theme-blue
+				// have to override default button features from bootstrap
+				.btn
+					background-color: $theme-blue
+					font-size: 13px
+					color: $theme-white
+					border-radius: 0px
+					margin: 0px
+				.btn:focus
+					box-shadow: 0 0 0 0px $theme-blue //to override bootstrap's default box shadow setting on focus
+				a
+					color: $theme-white
+					text-decoration: none			
+				.proj-link
+					padding: 20px
+				.proj-link:hover
+					background-color: $theme-grey
+					color: $theme-green
+					transition: all 0.25s ease-in-out
+
+@media screen and (max-width: 800px)
+	.projects-container
+		margin-top: 80px
+		height: 100%
+		// .project-title
+		// 	padding: 20px 
+		.project-section
+			width: 400px
+			margin-bottom: 20px				
+
+
+
+
+
+
+
